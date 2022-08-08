@@ -13,7 +13,6 @@ script = ExtResource( 1 )
 margin_right = 1024.0
 margin_bottom = 188.0
 size_flags_horizontal = 3
-size_flags_vertical = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
 margin_left = 7.0
@@ -120,12 +119,10 @@ text = "READ"
 
 [node name="LoadingLabel" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2"]
 unique_name_in_owner = true
-visible = false
 margin_left = 50.0
 margin_top = 13.0
-margin_right = 111.0
+margin_right = 50.0
 margin_bottom = 27.0
-text = "Loading..."
 
 [node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/HBoxContainer"]
 margin_left = 255.0
@@ -153,7 +150,6 @@ margin_right = 1024.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 2.37
 
 [node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer2"]
 margin_left = 7.0
