@@ -3,6 +3,26 @@ extends Node
 var session = Session.new()
 var astring: String
 var placeless_messages = {}
+var time
+var dateDic = {"year": 2000,
+				"month": 01,
+				"day": 01
+				}
+var monthDic = {
+	"Jan": 1,
+	"Feb": 2,
+	"Mar": 3,
+	"Apr": 4,
+	"May": 5,
+	"Jun": 6,
+	"Jul": 7,
+	"Aug": 8,
+	"Sep": 9,
+	"Oct": 10,
+	"Nov": 11,
+	"Dec": 12
+}
+var test = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -60,9 +80,8 @@ func _save_character(name):
 	}
 
 func _save_IC_message(line):
-#	[Sat Aug 6 18:21:36 2022 GMT] Fawkes (Kazuichi): }}}[6] {{{The ribbon. Yeah, that interests me.
 	var lineArray = line.split(" ")
-	var time = lineArray[3]
+	var time = _convert_time(str(lineArray[4]) + "-" + str(monthDic[lineArray[1]]) + "-" + str(lineArray[2]) + " " + lineArray[3])
 	var character = lineArray[6].rstrip(":")
 	var message = line.split(":", true, 3)[3]
 	if message.find("] {{{") != -1 and message.find(" }}}[") != -1:
@@ -83,14 +102,13 @@ func _save_IC_message(line):
 		}
 
 func _save_movement(line):
-#	[OOC][Sat Aug 6 18:38:41 2022 GMT] $H: [8] Willow moves from [52] Security Room to [51] Downstairs Lobby.
 	var character = line.split("]")[3].lstrip(" ").split("moves from")[0].rstrip(" ")
 	var from = line.split("] ")[3].split(" to")[0]
 	var fromID = line.split("] ")[2].split("[")[1]
 	var to = line.split("] ")[4].rsplit(".")[0]
 	var toID = line.split("] ")[3].split("[")[1]
-	var time = line.split(" ")[3]
-#	astring += line + "\n" + time + "\n_________________\n"
+	var lineArray = line.split(" ")
+	var time = _convert_time(str(lineArray[4]) + "-" + str(monthDic[lineArray[1]]) + "-" + str(lineArray[2]) + " " + str(lineArray[3]))
 	session.characters["location"] = toID
 	# Save from and to areas if they are not saved yet
 	if session.areas.has(from) == false:
@@ -118,3 +136,8 @@ func _save_movement(line):
 		"from": fromID,
 		"to": toID
 	})
+
+func _convert_time(timeStr):
+	var timeDic = Time.get_datetime_dict_from_datetime_string(timeStr, false)
+	return Time.get_unix_time_from_datetime_dict(timeDic)
+
