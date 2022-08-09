@@ -4,8 +4,8 @@
 
 [resource]
 script = ExtResource( 1 )
-startTime = null
-endTime = ""
+startTime = 1659807596
+endTime = 1659822496
 areas = {
 "0": {
 "name": "Lobby"

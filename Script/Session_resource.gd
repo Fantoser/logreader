@@ -1,9 +1,9 @@
 extends Resource
 class_name Session
 
-export(String) var startTime = null
+export(String) var startTime = 0
 
-export(String) var endTime
+export(String) var endTime = 0
 
 export(Dictionary) var areas = {}
 

@@ -26,6 +26,7 @@ var test = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$"%Controls".session = session
 	get_viewport().connect("size_changed", self, "_resize")
 
 func _resize():
@@ -65,13 +66,14 @@ func _on_Read_pressed():
 						continue
 					if line.find("moves from") != -1:
 						_save_movement(line)
-
-
 				index += 1
 			file.close()
 		$PanelContainer2/RichTextLabel.text = astring
 		ResourceSaver.save("res://test_save.tres", session)
 		get_node("%LoadingLabel").text = ""
+		print(Time.get_datetime_string_from_unix_time(session.startTime, true))
+		print(Time.get_datetime_string_from_unix_time(session.endTime, true))
+		$"%Controls".setup()
 
 func _save_character(name):
 	session.characters[name] = {
@@ -139,5 +141,10 @@ func _save_movement(line):
 
 func _convert_time(timeStr):
 	var timeDic = Time.get_datetime_dict_from_datetime_string(timeStr, false)
-	return Time.get_unix_time_from_datetime_dict(timeDic)
+	var time = Time.get_unix_time_from_datetime_dict(timeDic)
+	if session.startTime == 0:
+		session.startTime = time
+	if session.endTime < time:
+		session.endTime = time
+	return time
 
