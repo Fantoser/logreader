@@ -8,198 +8,120 @@ startTime = 1659809447
 endTime = 1659821362
 areas = {
 "0": {
-"Pos": Vector2( 16, -79 ),
-"Size": Vector2( 100, 100 ),
 "name": "Lobby"
 },
 "1": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Seiko's Bedroom"
 },
 "12": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Kazuichi's Bedroom"
 },
 "17": {
-"Pos": Vector2( 140, 68 ),
-"Size": Vector2( 100, 100 ),
 "name": "North Hallway"
 },
 "18": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "South Hallway"
 },
 "19": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Dining Hall"
 },
 "2": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Peko's Bedroom"
 },
 "20": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Kitchen"
 },
 "21": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Destroyed Room"
 },
 "22": {
-"Pos": Vector2( 292, -122 ),
-"Size": Vector2( 100, 100 ),
 "name": "Infirmary"
 },
 "23": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Elevator"
 },
 "24": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Laundry Room"
 },
 "25": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Pool"
 },
 "29": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Male Bathroom"
 },
 "3": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Miu's Bedroom"
 },
 "30": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Bathroom Stall"
 },
 "36": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Ch2 Lobby"
 },
 "37": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Ch2 West Hall"
 },
 "39": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "VIP Bedroom 1"
 },
 "4": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Aiko's Bedroom"
 },
 "41": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Lockers"
 },
 "42": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Spa"
 },
 "43": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Music Hall"
 },
 "44": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Upstairs Kitchen"
 },
 "45": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Freezer"
 },
 "46": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Ch2 East Hall"
 },
 "5": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Maki's Bedroom"
 },
 "50": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Headmaster's Office"
 },
 "51": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Downstairs Lobby"
 },
 "52": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Security Room"
 },
 "53": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Workshop"
 },
 "54": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Entrance Lobby"
 },
 "55": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Buffet"
 },
 "56": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Library"
 },
 "57": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Clothing Store"
 },
 "58": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Storage Room"
 },
 "6": {
-"Pos": Vector2( 353, 91 ),
-"Size": Vector2( 100, 100 ),
 "name": "Kiyotaka's Bedroom"
 },
 "61": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "Downstairs Female Bathroom"
 },
 "66": {
-"Pos": Vector2( 0, 0 ),
-"Size": Vector2( 100, 100 ),
 "name": "The Twilight Zone"
 }
 }
@@ -208,3022 +130,3022 @@ characters = {
 "color": Color( 0.898039, 0.45098, 0.45098, 1 ),
 "location": "18",
 "name": "DRRA_Shirokuma",
-"startLocation": null
+"startLocation": "0"
 },
 1: {
 "color": Color( 0.85098, 0.113725, 0, 1 ),
 "location": "43",
 "name": "DRRA_Narrator",
-"startLocation": null
+"startLocation": "0"
 },
 2: {
 "color": Color( 0.478431, 0.262745, 0.184314, 1 ),
 "location": "43",
 "name": "DRRA_Kiyotaka",
-"startLocation": null
+"startLocation": "22"
 },
 3: {
 "color": Color( 0.901961, 0.733333, 0.67451, 1 ),
 "location": "43",
 "name": "Okane",
-"startLocation": null
+"startLocation": "17"
 },
 4: {
 "color": Color( 0.54902, 0.384314, 0.27451, 1 ),
 "location": "43",
 "name": "Willow",
-"startLocation": null
+"startLocation": "17"
 },
 5: {
 "color": Color( 1, 0, 0.266667, 1 ),
 "location": "43",
 "name": "Ichigo Inu",
-"startLocation": null
+"startLocation": "17"
 },
 6: {
 "color": Color( 0.431373, 0.180392, 0.556863, 1 ),
 "location": "43",
 "name": "DRRA_Kokichi",
-"startLocation": null
+"startLocation": "22"
 },
 7: {
 "color": Color( 0.423529, 0.32549, 0.211765, 1 ),
 "location": "43",
 "name": "DRRA_Maki",
-"startLocation": null
+"startLocation": "17"
 },
 8: {
 "color": Color( 0.760784, 0, 0.94902, 1 ),
 "location": "43",
 "name": "Usagi",
-"startLocation": null
+"startLocation": "17"
 },
 9: {
 "color": Color( 0.85098, 0.552941, 0.211765, 1 ),
 "location": "43",
 "name": "Alicia",
-"startLocation": null
+"startLocation": "22"
 },
 10: {
 "color": Color( 1, 0.835294, 0.501961, 1 ),
 "location": "43",
 "name": "Kurone",
-"startLocation": null
+"startLocation": "22"
 },
 11: {
 "color": Color( 0.94902, 0.239216, 0.615686, 1 ),
 "location": "43",
 "name": "Fawkes",
-"startLocation": null
+"startLocation": "6"
 },
 12: {
 "color": Color( 0.65098, 0.596078, 0.486275, 1 ),
 "location": "43",
 "name": "Spectator",
-"startLocation": null
+"startLocation": "6"
 }
 }
 messages = {
 }
 movements = {
 1659809447: [ {
-"character": "DRRA_Shirokuma",
+"character": 0,
 "from": "0",
 "to": "17"
 } ],
 1659809467: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "0",
 "to": "22"
 } ],
 1659809476: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "0",
 "to": "22"
 } ],
 1659809482: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "22",
 "to": "17"
 } ],
 1659809655: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "22",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "22",
 "to": "17"
 } ],
 1659809667: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "6"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "6"
 } ],
 1659809789: [ {
-"character": "DRRA_Shirokuma",
+"character": 0,
 "from": "17",
 "to": "19"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "17",
 "to": "19"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "17",
 "to": "19"
 } ],
 1659809792: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "17",
 "to": "19"
 } ],
 1659809793: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "22",
 "to": "17"
 } ],
 1659809795: [ {
-"character": "DRRA_Shirokuma",
+"character": 0,
 "from": "19",
 "to": "18"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "19",
 "to": "18"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "19",
 "to": "18"
 } ],
 1659809803: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "19",
 "to": "18"
 } ],
 1659809810: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "51"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "18",
 "to": "51"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "18",
 "to": "51"
 } ],
 1659809813: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "51"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "18",
 "to": "51"
 } ],
 1659809843: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "36"
 } ],
 1659809856: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "36",
 "to": "43"
 } ],
 1659809884: [ {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "61"
 } ],
 1659809939: [ {
-"character": "Okane",
+"character": 3,
 "from": "61",
 "to": "51"
 } ],
 1659810045: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "52"
 } ],
 1659810059: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "52",
 "to": "51"
 } ],
 1659810063: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "17",
 "to": "19"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "17",
 "to": "19"
 } ],
 1659810078: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "19",
 "to": "20"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "19",
 "to": "20"
 } ],
 1659810301: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "52"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "52"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "52"
 } ],
 1659810312: [ {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "52"
 } ],
 1659810321: [ {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "52"
 } ],
 1659810412: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "43",
 "to": "36"
 } ],
 1659810443: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "36",
 "to": "17"
 } ],
 1659810489: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "22"
 } ],
 1659810664: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "22",
 "to": "17"
 } ],
 1659810673: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "6"
 } ],
 1659810712: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "6",
 "to": "17"
 } ],
 1659810723: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "22"
 } ],
 1659811027: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "22",
 "to": "17"
 }, {
-"character": "Alicia",
+"character": 9,
 "from": "22",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "22",
 "to": "17"
 } ],
 1659811121: [ {
-"character": "Willow",
+"character": 4,
 "from": "52",
 "to": "51"
 } ],
 1659811124: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "6",
 "to": "17"
 } ],
 1659811129: [ {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "53"
 } ],
 1659811241: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "52",
 "to": "58"
 } ],
 1659811276: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "19"
 } ],
 1659811288: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "18"
 } ],
 1659811331: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "12"
 } ],
 1659811357: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "3"
 }, {
-"character": "Alicia",
+"character": 9,
 "from": "17",
 "to": "3"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "3"
 } ],
 1659811518: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "58",
 "to": "52"
 } ],
 1659811527: [ {
-"character": "Okane",
+"character": 3,
 "from": "52",
 "to": "51"
 } ],
 1659811530: [ {
-"character": "Willow",
+"character": 4,
 "from": "53",
 "to": "51"
 } ],
 1659811535: [ {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "52"
 } ],
 1659811615: [ {
-"character": "Willow",
+"character": 4,
 "from": "52",
 "to": "51"
 } ],
 1659811617: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "52",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "52",
 "to": "51"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "52",
 "to": "51"
 } ],
 1659811655: [ {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "53"
 } ],
 1659811657: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "53"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "53"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "53"
 } ],
 1659811658: [ {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "53"
 } ],
 1659811764: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "53",
 "to": "58"
 } ],
 1659811789: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "58",
 "to": "53"
 } ],
 1659811850: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "6",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "6",
 "to": "17"
 } ],
 1659811863: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "22"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "22"
 } ],
 1659811879: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "22",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "22",
 "to": "17"
 } ],
 1659811884: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "19"
 } ],
 1659811903: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "19",
 "to": "17"
 } ],
 1659811921: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "1"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "1"
 } ],
 1659811955: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "1",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "1",
 "to": "17"
 } ],
 1659811963: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "23"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "23"
 } ],
 1659811973: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "23",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "23",
 "to": "17"
 } ],
 1659811983: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "24"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "24"
 } ],
 1659811988: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "24",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "24",
 "to": "17"
 } ],
 1659811992: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "36"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "36"
 } ],
 1659811996: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "43"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "36",
 "to": "43"
 } ],
 1659812020: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "43",
 "to": "46"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "43",
 "to": "46"
 } ],
 1659812032: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "46",
 "to": "50"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "46",
 "to": "50"
 } ],
 1659812045: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "50",
 "to": "46"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "50",
 "to": "46"
 } ],
 1659812050: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "46",
 "to": "36"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "46",
 "to": "36"
 } ],
 1659812057: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "36",
 "to": "17"
 } ],
 1659812065: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "21"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "21"
 } ],
 1659812070: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "21",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "21",
 "to": "17"
 } ],
 1659812074: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "19"
 } ],
 1659812080: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "20"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "19",
 "to": "20"
 } ],
 1659812187: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "19"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "20",
 "to": "19"
 } ],
 1659812193: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "19",
 "to": "18"
 } ],
 1659812194: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "12",
 "to": "18"
 } ],
 1659812419: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "18",
 "to": "19"
 } ],
 1659812424: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "19",
 "to": "17"
 } ],
 1659812429: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "3"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "3"
 } ],
 1659812586: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "51"
 } ],
 1659812596: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "51",
 "to": "54"
 } ],
 1659812606: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "54",
 "to": "51"
 } ],
 1659812616: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "51",
 "to": "18"
 } ],
 1659812636: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "19"
 } ],
 1659812646: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "17"
 } ],
 1659812657: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "36"
 } ],
 1659812667: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "37"
 } ],
 1659812676: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "37",
 "to": "36"
 } ],
 1659812686: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "43"
 } ],
 1659812739: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "53",
 "to": "51"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "53",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "53",
 "to": "51"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "53",
 "to": "51"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "53",
 "to": "51"
 } ],
 1659812764: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "43",
 "to": "44"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "54"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "54"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "54"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "54"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "54"
 } ],
 1659812774: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "44",
 "to": "45"
 } ],
 1659812783: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "57"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "54",
 "to": "57"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "57"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "57"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "54",
 "to": "57"
 } ],
 1659812788: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "58"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "57",
 "to": "58"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "58"
 } ],
 1659812790: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "45",
 "to": "44"
 } ],
 1659812829: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "44",
 "to": "43"
 } ],
 1659812874: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "43",
 "to": "46"
 } ],
 1659812885: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "46",
 "to": "36"
 } ],
 1659812892: [ {
-"character": "Okane",
+"character": 3,
 "from": "57",
 "to": "54"
 } ],
 1659812896: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "17"
 } ],
 1659812899: [ {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "51"
 } ],
 1659812905: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "19"
 } ],
 1659812911: [ {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "54"
 } ],
 1659812914: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "18"
 } ],
 1659812917: [ {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "55"
 } ],
 1659812926: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "12"
 } ],
 1659812932: [ {
-"character": "Okane",
+"character": 3,
 "from": "55",
 "to": "54"
 } ],
 1659812941: [ {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "51"
 } ],
 1659812949: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "12",
 "to": "18"
 } ],
 1659812953: [ {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "18"
 } ],
 1659813160: [ {
-"character": "Okane",
+"character": 3,
 "from": "18",
 "to": "51"
 } ],
 1659813167: [ {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "54"
 } ],
 1659813176: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "12"
 } ],
 1659813179: [ {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "57"
 } ],
 1659813185: [ {
-"character": "Okane",
+"character": 3,
 "from": "57",
 "to": "58"
 } ],
 1659813569: [ {
-"character": "Alicia",
+"character": 9,
 "from": "3",
 "to": "17"
 } ],
 1659813570: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "3",
 "to": "17"
 } ],
 1659813655: [ {
-"character": "Alicia",
+"character": 9,
 "from": "17",
 "to": "6"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "6"
 } ],
 1659813747: [ {
-"character": "Spectator",
+"character": 12,
 "from": "6",
 "to": "58"
 } ],
 1659813754: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "3",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "3",
 "to": "17"
 } ],
 1659813865: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "19"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "19"
 } ],
 1659813878: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "20"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "20"
 } ],
 1659813986: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "20",
 "to": "19"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "20",
 "to": "19"
 } ],
 1659814098: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "18"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "18"
 } ],
 1659814185: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "18",
 "to": "19"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "18",
 "to": "19"
 } ],
 1659814193: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "17"
 } ],
 1659814202: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "36"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "36"
 } ],
 1659814213: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "36",
 "to": "43"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "36",
 "to": "43"
 } ],
 1659814258: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "58",
 "to": "57"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "58",
 "to": "57"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "58",
 "to": "57"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "58",
 "to": "57"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "58",
 "to": "57"
 } ],
 1659814271: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "54"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "57",
 "to": "54"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "54"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "57",
 "to": "54"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "57",
 "to": "54"
 } ],
 1659814278: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "51"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "54",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "51"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "54",
 "to": "51"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "51"
 } ],
 1659814284: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "18"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "18"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "18"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "18"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "18"
 } ],
 1659814292: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "18",
 "to": "19"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "18",
 "to": "19"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "18",
 "to": "19"
 } ],
 1659814299: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "19",
 "to": "17"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "19",
 "to": "17"
 } ],
 1659814300: [ {
-"character": "Spectator",
+"character": 12,
 "from": "58",
 "to": "19"
 } ],
 1659814308: [ {
-"character": "Spectator",
+"character": 12,
 "from": "19",
 "to": "17"
 } ],
 1659814314: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "2"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "17",
 "to": "2"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "2"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "17",
 "to": "2"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "17",
 "to": "2"
 } ],
 1659814339: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "43",
 "to": "44"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "43",
 "to": "44"
 } ],
 1659814340: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "20",
 "to": "19"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "20",
 "to": "19"
 } ],
 1659814348: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "19",
 "to": "18"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "19",
 "to": "18"
 } ],
 1659814363: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "18",
 "to": "19"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "18",
 "to": "19"
 } ],
 1659814380: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "3",
 "to": "6"
 } ],
 1659814479: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "19",
 "to": "17"
 } ],
 1659814494: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "17",
 "to": "4"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "17",
 "to": "4"
 } ],
 1659814531: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "44",
 "to": "45"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "44",
 "to": "45"
 } ],
 1659814543: [ {
-"character": "Spectator",
+"character": 12,
 "from": "17",
 "to": "2"
 } ],
 1659814696: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "2",
 "to": "12"
 } ],
 1659814703: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "12",
 "to": "45"
 } ],
 1659814750: [ {
-"character": "Spectator",
+"character": 12,
 "from": "0",
 "to": "12"
 } ],
 1659814869: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "12",
 "to": "18"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "12",
 "to": "18"
 } ],
 1659814883: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "45",
 "to": "44"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "45",
 "to": "44"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "45",
 "to": "44"
 } ],
 1659814895: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "44",
 "to": "43"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "44",
 "to": "43"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "44",
 "to": "43"
 } ],
 1659814907: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "43",
 "to": "46"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "43",
 "to": "46"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "43",
 "to": "46"
 } ],
 1659814922: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "46",
 "to": "36"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "46",
 "to": "36"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "46",
 "to": "36"
 } ],
 1659814942: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "17"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "36",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "36",
 "to": "17"
 } ],
 1659814955: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "19"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "19"
 } ],
 1659814964: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "20"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "20"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "20"
 } ],
 1659814975: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "19"
 } ],
 1659814991: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "18"
 } ],
 1659815003: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "19"
 } ],
 1659815013: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "17"
 } ],
 1659815180: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "5"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "5"
 } ],
 1659815275: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "2",
 "to": "53"
 } ],
 1659815323: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "53",
 "to": "2"
 } ],
 1659815705: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "19"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "20",
 "to": "19"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "20",
 "to": "19"
 } ],
 1659815738: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "17"
 } ],
 1659815751: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "5"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "5"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "5"
 } ],
 1659816208: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "5",
 "to": "6"
 } ],
 1659816629: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "4",
 "to": "17"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "4",
 "to": "17"
 } ],
 1659816652: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "17",
 "to": "5"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "17",
 "to": "5"
 } ],
 1659816860: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "5",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "5",
 "to": "17"
 } ],
 1659816876: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "19"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "19"
 } ],
 1659816897: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "20"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "20"
 } ],
 1659817064: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "5",
 "to": "20"
 } ],
 1659817215: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "5",
 "to": "17"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "5",
 "to": "17"
 } ],
 1659817244: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "17",
 "to": "36"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "17",
 "to": "36"
 } ],
 1659817306: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "5",
 "to": "17"
 } ],
 1659817316: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "19"
 } ],
 1659817342: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "17"
 } ],
 1659817352: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "19"
 } ],
 1659817363: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "18"
 } ],
 1659817377: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "12"
 } ],
 1659817385: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "2",
 "to": "17"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "2",
 "to": "17"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "2",
 "to": "17"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "2",
 "to": "17"
 } ],
 1659817392: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "12",
 "to": "18"
 } ],
 1659817396: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "36",
 "to": "17"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "36",
 "to": "17"
 } ],
 1659817401: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "19"
 } ],
 1659817411: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "17"
 } ],
 1659817412: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "17",
 "to": "36"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "17",
 "to": "36"
 } ],
 1659817423: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "36"
 } ],
 1659817426: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "17",
 "to": "19"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "17",
 "to": "19"
 } ],
 1659817430: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "36",
 "to": "37"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "36",
 "to": "37"
 } ],
 1659817432: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "43"
 } ],
 1659817443: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "43",
 "to": "44"
 } ],
 1659817444: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "19",
 "to": "20"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "20"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "19",
 "to": "20"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "19",
 "to": "20"
 } ],
 1659817453: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "44",
 "to": "45"
 } ],
 1659817515: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "45",
 "to": "44"
 } ],
 1659817526: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "44",
 "to": "43"
 } ],
 1659817531: [ {
-"character": "Spectator",
+"character": 12,
 "from": "2",
 "to": "20"
 } ],
 1659817574: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "43",
 "to": "46"
 } ],
 1659817578: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "37"
 } ],
 1659817606: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "6",
 "to": "17"
 }, {
-"character": "Alicia",
+"character": 9,
 "from": "6",
 "to": "17"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "6",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "6",
 "to": "17"
 } ],
 1659817615: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "Alicia",
+"character": 9,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "19"
 } ],
 1659817700: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "37",
 "to": "20"
 } ],
 1659817712: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "37",
 "to": "41"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "37",
 "to": "41"
 } ],
 1659817725: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "Alicia",
+"character": 9,
 "from": "19",
 "to": "18"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "19",
 "to": "18"
 } ],
 1659817726: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "19"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "20",
 "to": "19"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "20",
 "to": "19"
 } ],
 1659817736: [ {
-"character": "Alicia",
+"character": 9,
 "from": "18",
 "to": "19"
 } ],
 1659817744: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "51"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "18",
 "to": "51"
 } ],
 1659817753: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "46",
 "to": "36"
 } ],
 1659817759: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "52"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "52"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "51",
 "to": "52"
 } ],
 1659817824: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "42"
 } ],
 1659817857: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "19"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "20",
 "to": "19"
 } ],
 1659817868: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "19",
 "to": "17"
 } ],
 1659817877: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "42",
 "to": "36"
 } ],
 1659817879: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "2"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "17",
 "to": "2"
 } ],
 1659817887: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "2",
 "to": "20"
 } ],
 1659817892: [ {
-"character": "Okane",
+"character": 3,
 "from": "2",
 "to": "17"
 } ],
 1659817901: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "43"
 } ],
 1659817910: [ {
-"character": "Okane",
+"character": 3,
 "from": "17",
 "to": "19"
 } ],
 1659817926: [ {
-"character": "Okane",
+"character": 3,
 "from": "19",
 "to": "20"
 } ],
 1659817957: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "52",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "52",
 "to": "51"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "52",
 "to": "51"
 } ],
 1659817962: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "54"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "54"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "51",
 "to": "54"
 } ],
 1659818000: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "56"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "56"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "54",
 "to": "56"
 } ],
 1659818016: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "56",
 "to": "58"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "56",
 "to": "58"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "56",
 "to": "58"
 } ],
 1659818021: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "19"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "20",
 "to": "19"
 } ],
 1659818028: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "17"
 } ],
 1659818039: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "19",
 "to": "18"
 } ],
 1659818046: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "29"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "18",
 "to": "29"
 } ],
 1659818047: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "43",
 "to": "36"
 } ],
 1659818057: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "17"
 } ],
 1659818072: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "19"
 } ],
 1659818088: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "29",
 "to": "30"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "29",
 "to": "30"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "18"
 } ],
 1659818129: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "3"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "3"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "3"
 } ],
 1659818133: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "29"
 } ],
 1659818184: [ {
-"character": "Spectator",
+"character": 12,
 "from": "20",
 "to": "41"
 } ],
 1659818209: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "30",
 "to": "29"
 } ],
 1659818214: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "29",
 "to": "30"
 } ],
 1659818244: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "29",
 "to": "18"
 } ],
 1659818253: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "51"
 } ],
 1659818362: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "58",
 "to": "57"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "58",
 "to": "57"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "58",
 "to": "57"
 } ],
 1659818370: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "30",
 "to": "29"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "30",
 "to": "29"
 } ],
 1659818377: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "54"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "54"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "57",
 "to": "54"
 } ],
 1659818381: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "55"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "55"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "54",
 "to": "55"
 } ],
 1659818390: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "55",
 "to": "54"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "55",
 "to": "54"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "55",
 "to": "54"
 } ],
 1659818395: [ {
-"character": "Alicia",
+"character": 9,
 "from": "19",
 "to": "20"
 } ],
 1659818412: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "51"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "54",
 "to": "51"
 } ],
 1659818471: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "41",
 "to": "37"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "41",
 "to": "37"
 } ],
 1659818492: [ {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "37",
 "to": "39"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "37",
 "to": "39"
 } ],
 1659818558: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "29",
 "to": "30"
 } ],
 1659818564: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "30",
 "to": "29"
 } ],
 1659818569: [ {
-"character": "Spectator",
+"character": 12,
 "from": "41",
 "to": "39"
 } ],
 1659818701: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "29",
 "to": "18"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "29",
 "to": "18"
 } ],
 1659818722: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "51"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "18",
 "to": "51"
 } ],
 1659818812: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "20"
 } ],
 1659818845: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "18"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "51",
 "to": "18"
 } ],
 1659818861: [ {
-"character": "Fawkes",
+"character": 11,
 "from": "51",
 "to": "18"
 } ],
 1659818904: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "20"
 } ],
 1659818913: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "18"
 } ],
 1659818938: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "18"
 } ],
 1659818952: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "18",
 "to": "19"
 } ],
 1659818959: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "19",
 "to": "20"
 } ],
 1659819054: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "19"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "18",
 "to": "19"
 } ],
 1659819067: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "19",
 "to": "17"
 } ],
 1659819076: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "36"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "36"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "36"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "17",
 "to": "36"
 } ],
 1659819242: [ {
-"character": "Spectator",
+"character": 12,
 "from": "39",
 "to": "20"
 } ],
 1659819365: [ {
-"character": "Alicia",
+"character": 9,
 "from": "20",
 "to": "19"
 } ],
 1659819467: [ {
-"character": "Alicia",
+"character": 9,
 "from": "19",
 "to": "17"
 } ],
 1659819560: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "20",
 "to": "19"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "20",
 "to": "19"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "20",
 "to": "19"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "20",
 "to": "19"
 } ],
 1659819566: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "19",
 "to": "18"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "19",
 "to": "18"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "19",
 "to": "18"
 } ],
 1659819569: [ {
-"character": "Alicia",
+"character": 9,
 "from": "17",
 "to": "36"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "3",
 "to": "66"
 } ],
 1659819574: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "18",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "51"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "18",
 "to": "51"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "18",
 "to": "51"
 } ],
 1659819596: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "53"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "53"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "53"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "53"
 } ],
 1659819607: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "66"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "66"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "66"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "36",
 "to": "66"
 } ],
 1659819636: [ {
-"character": "Spectator",
+"character": 12,
 "from": "20",
 "to": "66"
 } ],
 1659819661: [ {
-"character": "Alicia",
+"character": 9,
 "from": "36",
 "to": "66"
 } ],
 1659819718: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "53",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "53",
 "to": "51"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "53",
 "to": "51"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "53",
 "to": "51"
 } ],
 1659819723: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "66",
 "to": "36"
 } ],
 1659819731: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "3",
 "to": "17"
 }, {
-"character": "Kurone",
+"character": 10,
 "from": "3",
 "to": "17"
 } ],
 1659819770: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "17"
 } ],
 1659819773: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "54"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "54"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "54"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "54"
 } ],
 1659819791: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "54",
 "to": "57"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "57"
 } ],
 1659819792: [ {
-"character": "Willow",
+"character": 4,
 "from": "54",
 "to": "57"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "57"
 } ],
 1659819831: [ {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "19"
 } ],
 1659819842: [ {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "18"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "18"
 } ],
 1659819859: [ {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "57",
 "to": "58"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "58"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "57",
 "to": "58"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "57",
 "to": "58"
 } ],
 1659819874: [ {
-"character": "Kurone",
+"character": 10,
 "from": "18",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "51"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "18",
 "to": "51"
 } ],
 1659819884: [ {
-"character": "Kurone",
+"character": 10,
 "from": "51",
 "to": "54"
 } ],
 1659819885: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "54"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "51",
 "to": "54"
 } ],
 1659819903: [ {
-"character": "Kurone",
+"character": 10,
 "from": "54",
 "to": "57"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "57"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "54",
 "to": "57"
 } ],
 1659820083: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "39"
 } ],
 1659820251: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "66",
 "to": "36"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "66",
 "to": "36"
 }, {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "66",
 "to": "36"
 } ],
 1659820271: [ {
-"character": "Alicia",
+"character": 9,
 "from": "66",
 "to": "36"
 } ],
 1659820378: [ {
-"character": "Spectator",
+"character": 12,
 "from": "66",
 "to": "58"
 } ],
 1659820430: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "36",
 "to": "43"
 } ],
 1659820454: [ {
-"character": "Alicia",
+"character": 9,
 "from": "36",
 "to": "17"
 } ],
 1659820464: [ {
-"character": "Alicia",
+"character": 9,
 "from": "17",
 "to": "6"
 } ],
 1659820468: [ {
-"character": "Alicia",
+"character": 9,
 "from": "6",
 "to": "17"
 } ],
 1659820494: [ {
-"character": "Alicia",
+"character": 9,
 "from": "17",
 "to": "6"
 } ],
 1659820515: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "17"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "17"
 } ],
 1659820576: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "19"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "19"
 } ],
 1659820600: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "43",
 "to": "44"
 } ],
 1659820614: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "44",
 "to": "45"
 } ],
 1659820626: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "18"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "18"
 } ],
 1659820633: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "45",
 "to": "44"
 } ],
 1659820638: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "44",
 "to": "43"
 } ],
 1659820643: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "43",
 "to": "46"
 } ],
 1659820650: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "25"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "25"
 } ],
 1659820670: [ {
-"character": "Spectator",
+"character": 12,
 "from": "58",
 "to": "57"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "58",
 "to": "57"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "58",
 "to": "57"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "58",
 "to": "57"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "58",
 "to": "57"
 } ],
 1659820678: [ {
-"character": "Spectator",
+"character": 12,
 "from": "57",
 "to": "54"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "57",
 "to": "54"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "57",
 "to": "54"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "57",
 "to": "54"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "57",
 "to": "54"
 } ],
 1659820682: [ {
-"character": "DRRA_Kiyotaka",
+"character": 2,
 "from": "46",
 "to": "43"
 } ],
 1659820685: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "25",
 "to": "18"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "25",
 "to": "18"
 } ],
 1659820690: [ {
-"character": "Spectator",
+"character": 12,
 "from": "54",
 "to": "51"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "54",
 "to": "51"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "54",
 "to": "51"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "54",
 "to": "51"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "54",
 "to": "51"
 } ],
 1659820697: [ {
-"character": "Spectator",
+"character": 12,
 "from": "51",
 "to": "18"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "51",
 "to": "18"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "51",
 "to": "18"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "51",
 "to": "18"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "51",
 "to": "18"
 } ],
 1659820742: [ {
-"character": "Spectator",
+"character": 12,
 "from": "18",
 "to": "19"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "18",
 "to": "19"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "18",
 "to": "19"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "18",
 "to": "19"
 } ],
 1659820753: [ {
-"character": "Spectator",
+"character": 12,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "19",
 "to": "17"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "19",
 "to": "17"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "19",
 "to": "17"
 } ],
 1659820759: [ {
-"character": "Spectator",
+"character": 12,
 "from": "17",
 "to": "36"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "36"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "17",
 "to": "36"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "17",
 "to": "36"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "17",
 "to": "36"
 } ],
 1659820769: [ {
-"character": "Spectator",
+"character": 12,
 "from": "36",
 "to": "43"
 }, {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "43"
 }, {
-"character": "Willow",
+"character": 4,
 "from": "36",
 "to": "43"
 }, {
-"character": "Okane",
+"character": 3,
 "from": "36",
 "to": "43"
 }, {
-"character": "Ichigo Inu",
+"character": 5,
 "from": "36",
 "to": "43"
 } ],
 1659820772: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "43",
 "to": "36"
 } ],
 1659820802: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "43"
 } ],
 1659820834: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "12"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "12"
 } ],
 1659820838: [ {
-"character": "Kurone",
+"character": 10,
 "from": "57",
 "to": "54"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "57",
 "to": "54"
 } ],
 1659820857: [ {
-"character": "Kurone",
+"character": 10,
 "from": "54",
 "to": "51"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "54",
 "to": "51"
 } ],
 1659820872: [ {
-"character": "Kurone",
+"character": 10,
 "from": "51",
 "to": "18"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "51",
 "to": "18"
 } ],
 1659820892: [ {
-"character": "Kurone",
+"character": 10,
 "from": "18",
 "to": "19"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "18",
 "to": "19"
 } ],
 1659820901: [ {
-"character": "Kurone",
+"character": 10,
 "from": "19",
 "to": "17"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "19",
 "to": "17"
 } ],
 1659820910: [ {
-"character": "Kurone",
+"character": 10,
 "from": "17",
 "to": "36"
 }, {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "36"
 } ],
 1659821017: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "36",
 "to": "17"
 } ],
 1659821025: [ {
-"character": "Kurone",
+"character": 10,
 "from": "36",
 "to": "43"
 } ],
 1659821035: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "12",
 "to": "18"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "12",
 "to": "18"
 } ],
 1659821075: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "18",
 "to": "19"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "18",
 "to": "19"
 } ],
 1659821085: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "19",
 "to": "17"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "19",
 "to": "17"
 } ],
 1659821095: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "17",
 "to": "36"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "17",
 "to": "36"
 } ],
 1659821107: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "17",
 "to": "36"
 } ],
 1659821110: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "43"
 }, {
-"character": "Fawkes",
+"character": 11,
 "from": "36",
 "to": "43"
 } ],
 1659821135: [ {
-"character": "DRRA_Kokichi",
+"character": 6,
 "from": "36",
 "to": "43"
 } ],
 1659821246: [ {
-"character": "Alicia",
+"character": 9,
 "from": "6",
 "to": "17"
 } ],
 1659821258: [ {
-"character": "Alicia",
+"character": 9,
 "from": "17",
 "to": "36"
 } ],
 1659821273: [ {
-"character": "Alicia",
+"character": 9,
 "from": "36",
 "to": "43"
 } ],
 1659821298: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "39",
 "to": "37"
 }, {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "39",
 "to": "37"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "39",
 "to": "37"
 } ],
 1659821322: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "37",
 "to": "36"
 }, {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "37",
 "to": "36"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "37",
 "to": "36"
 } ],
 1659821362: [ {
-"character": "DRRA_Narrator",
+"character": 1,
 "from": "36",
 "to": "43"
 }, {
-"character": "DRRA_Maki",
+"character": 7,
 "from": "36",
 "to": "43"
 }, {
-"character": "Usagi",
+"character": 8,
 "from": "36",
 "to": "43"
 } ]

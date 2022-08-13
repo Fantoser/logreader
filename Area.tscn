@@ -32,6 +32,13 @@ margin_top = 43.0
 margin_right = 71.0
 margin_bottom = 57.0
 
+[node name="Grid" type="GridContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
 [connection signal="button_down" from="Background" to="." method="_on_Background_button_down"]
 [connection signal="button_up" from="Background" to="." method="_on_Background_button_up"]
 [connection signal="button_down" from="ScaleButton" to="." method="_on_ScaleButton_button_down"]

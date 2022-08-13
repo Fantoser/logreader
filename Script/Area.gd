@@ -13,6 +13,7 @@ var camera
 func _ready(): 
 	camera = get_parent().get_parent().get_node("Camera")
 	$Label.text = areaName
+	self.name = id
 	_place_buttons()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -37,6 +38,8 @@ func _place_buttons():
 	var bgHeight = $Background.rect_size.y
 	$ScaleButton.rect_position = Vector2(bgWidth-30, bgHeight-30)
 	$Label.rect_position = Vector2(bgWidth/2-$Label.rect_size.x/2, bgHeight/2)
+	$Grid.rect_size = Vector2(bgWidth, bgHeight)
+	$Grid.columns = bgWidth / 30
 	session.areas[id]["Size"] = Vector2($Background.rect_size)
 	session.areas[id]["Pos"] = rect_position
 

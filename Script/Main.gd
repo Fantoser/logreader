@@ -276,11 +276,13 @@ func _process_move(line):
 	if session.areas.has(toID) == false:
 		_save_area(toID, to)
 
+	if session.characters[charID]["startLocation"] == null:
+		session.characters[charID]["startLocation"] = fromID
 	session.characters[charID]["location"] = toID
 	if session.movements.has(time) == false:
 		session.movements[time] = []
 	session.movements[time].append({
-		"character": character,
+		"character": charID,
 		"from": fromID,
 		"to": toID
 	})
