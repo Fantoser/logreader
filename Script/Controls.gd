@@ -69,7 +69,7 @@ func _add_characters():
 		mapChar.mouse_filter = MOUSE_FILTER_IGNORE
 		mapChar.texture = bean
 		mapChar.self_modulate = session.characters[id]["color"]
-		areas.get_node(str(session.characters[id]["startLocation"])).get_node("Grid").add_child(mapChar)
+		areas.get_node(str(session.characters[id]["startLocation"])).get_node("%Grid").add_child(mapChar)
 
 func _add_areas():
 	for id in session.areas:
@@ -106,10 +106,10 @@ func _move_characters(newTime):
 	for time in range(fromTime, toTime):
 		if session.movements.has(time):
 			for movement in session.movements[time]:
-				if areas.get_node(movement[from]).get_node("Grid").has_node(str(movement["character"])):
-					var character = areas.get_node(movement[from]).get_node("Grid").get_node(str(movement["character"]))
-					areas.get_node(movement[from]).get_node("Grid").remove_child(character)
-					areas.get_node(movement[to]).get_node("Grid").add_child(character)
+				if areas.get_node(movement[from]).get_node("%Grid").has_node(str(movement["character"])):
+					var character = areas.get_node(movement[from]).get_node("%Grid").get_node(str(movement["character"]))
+					areas.get_node(movement[from]).get_node("%Grid").remove_child(character)
+					areas.get_node(movement[to]).get_node("%Grid").add_child(character)
 
 func _on_SaveButton_pressed():
 	ResourceSaver.save("res://test_save.tres", session)

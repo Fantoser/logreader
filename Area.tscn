@@ -31,14 +31,24 @@ expand = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 4 )
+align = 1
 autowrap = true
 
-[node name="Grid" type="GridContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+
+[node name="Grid" type="GridContainer" parent="CenterContainer"]
+unique_name_in_owner = true
+margin_left = 20.0
+margin_top = 15.0
+margin_right = 20.0
+margin_bottom = 25.0
+grow_horizontal = 2
+rect_min_size = Vector2( 0, 10 )
 mouse_filter = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
 
 [connection signal="button_down" from="Background" to="." method="_on_Background_button_down"]
 [connection signal="button_up" from="Background" to="." method="_on_Background_button_up"]
