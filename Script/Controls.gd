@@ -2,8 +2,8 @@ extends PanelContainer
 
 
 var session
-var difference
 var character = preload("res://Character.tscn")
+var area = preload("res://Area.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,6 +11,7 @@ func _ready():
 
 func _on_MapLoad_pressed():
 	var selector = FileDialog.new()
+	selector.add_filter("*.png, *.jpg, *.jpeg, *.bmp")
 	selector.set_mode(selector.MODE_OPEN_FILE)
 	selector.set_access(selector.ACCESS_FILESYSTEM)
 #	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
@@ -38,6 +39,7 @@ func setup():
 	get_node("%endTime").text = Time.get_datetime_string_from_unix_time(session.endTime, true)
 	_fill_log()
 	_add_characters()
+	_add_areas()
 
 func _fill_log():
 	for time in range(session.startTime, session.endTime+1):
@@ -55,6 +57,16 @@ func _add_characters():
 		characterNode.get_node("%Name").text = session.characters[id]["name"]
 		characterNode.get_node("%Icon").self_modulate = Color(session.characters[id]["color"])
 		get_node("%Characters").add_child(characterNode)
+
+func _add_areas():
+	for id in session.areas:
+		var areaNode = area.instance()
+		var areaRects = get_node("%Map").get_node("AreasRects")
+		areaNode.session = session
+		areaNode.id = id
+		areaNode.areaName = session.areas[id]["name"]
+		areaRects.add_child(areaNode)
+		areaNode.rect_position = Vector2(areaRects.get_child_count() * areaNode.rect_size.x+10, 0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

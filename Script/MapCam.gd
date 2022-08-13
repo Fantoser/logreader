@@ -8,9 +8,10 @@ var dragging = false
 func _ready():
 	pass # Replace with function body.
 
-func _unhandled_input(event):
+func _input(event):
 	if event.is_action_pressed("scrollUp"):
-		$Camera.zoom -= Vector2(1, 1)
+		if $Camera.zoom - Vector2(1, 1) > Vector2.ZERO:
+			$Camera.zoom -= Vector2(1, 1)
 	if event.is_action_pressed("scrollDown"):
 		$Camera.zoom += Vector2(1, 1)
 
