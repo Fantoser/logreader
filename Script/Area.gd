@@ -39,6 +39,7 @@ func _place_buttons():
 	$ScaleButton.rect_position = Vector2(bgWidth-30, bgHeight-30)
 	$Label.rect_position = Vector2(bgWidth/2-$Label.rect_size.x/2, bgHeight/2)
 	areas[id]["Size"] = Vector2($Background.rect_size)
+	areas[id]["Pos"] = rect_position
 
 func _input(event):
 
