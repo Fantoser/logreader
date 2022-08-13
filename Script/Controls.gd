@@ -76,3 +76,7 @@ func _add_areas():
 func _on_timeScale_scrolling():
 	if get_node("%endTime").text != "0":
 		get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
+
+
+func _on_SaveButton_pressed():
+	ResourceSaver.save("res://test_save.tres", session)

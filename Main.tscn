@@ -172,13 +172,13 @@ margin_bottom = 43.0
 rect_min_size = Vector2( 0, 20 )
 size_flags_vertical = 3
 
-[node name="Button" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
+[node name="SaveButton" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
 margin_right = 43.0
 margin_bottom = 43.0
 focus_mode = 0
 text = "SAVE"
 
-[node name="Button2" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
+[node name="LoadButton" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
 margin_left = 47.0
 margin_right = 96.0
 margin_bottom = 43.0
@@ -303,4 +303,5 @@ unique_name_in_owner = true
 [connection signal="pressed" from="Controls/HBoxContainer/PanelContainer/VBoxContainer/InsertButton" to="Controls" method="_on_InsertButton_pressed"]
 [connection signal="pressed" from="Controls/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader/FileLoadButton" to="." method="_on_FileLoad_pressed"]
 [connection signal="pressed" from="Controls/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2/ReadButton" to="." method="_on_Read_pressed"]
+[connection signal="pressed" from="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer/SaveButton" to="Controls" method="_on_SaveButton_pressed"]
 [connection signal="scrolling" from="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/VBoxContainer/timeScale" to="Controls" method="_on_timeScale_scrolling"]
