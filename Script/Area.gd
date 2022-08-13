@@ -1,7 +1,6 @@
 extends Control
 
 var session
-var areas = session.areas
 
 var id
 var areaName
@@ -31,15 +30,15 @@ func _on_Background_button_down():
 
 func _on_Background_button_up():
 	bgDrag = false
-	areas[id]["Pos"] = rect_position
+	session.areas[id]["Pos"] = rect_position
 
 func _place_buttons():
 	var bgWidth = $Background.rect_size.x
 	var bgHeight = $Background.rect_size.y
 	$ScaleButton.rect_position = Vector2(bgWidth-30, bgHeight-30)
 	$Label.rect_position = Vector2(bgWidth/2-$Label.rect_size.x/2, bgHeight/2)
-	areas[id]["Size"] = Vector2($Background.rect_size)
-	areas[id]["Pos"] = rect_position
+	session.areas[id]["Size"] = Vector2($Background.rect_size)
+	session.areas[id]["Pos"] = rect_position
 
 func _input(event):
 

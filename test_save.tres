@@ -8,120 +8,198 @@ startTime = 1659809447
 endTime = 1659821362
 areas = {
 "0": {
+"Pos": Vector2( 16, -79 ),
+"Size": Vector2( 100, 100 ),
 "name": "Lobby"
 },
 "1": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Seiko's Bedroom"
 },
 "12": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Kazuichi's Bedroom"
 },
 "17": {
+"Pos": Vector2( 140, 68 ),
+"Size": Vector2( 100, 100 ),
 "name": "North Hallway"
 },
 "18": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "South Hallway"
 },
 "19": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Dining Hall"
 },
 "2": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Peko's Bedroom"
 },
 "20": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Kitchen"
 },
 "21": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Destroyed Room"
 },
 "22": {
+"Pos": Vector2( 292, -122 ),
+"Size": Vector2( 100, 100 ),
 "name": "Infirmary"
 },
 "23": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Elevator"
 },
 "24": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Laundry Room"
 },
 "25": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Pool"
 },
 "29": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Male Bathroom"
 },
 "3": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Miu's Bedroom"
 },
 "30": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Bathroom Stall"
 },
 "36": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Ch2 Lobby"
 },
 "37": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Ch2 West Hall"
 },
 "39": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "VIP Bedroom 1"
 },
 "4": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Aiko's Bedroom"
 },
 "41": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Lockers"
 },
 "42": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Spa"
 },
 "43": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Music Hall"
 },
 "44": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Upstairs Kitchen"
 },
 "45": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Freezer"
 },
 "46": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Ch2 East Hall"
 },
 "5": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Maki's Bedroom"
 },
 "50": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Headmaster's Office"
 },
 "51": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Downstairs Lobby"
 },
 "52": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Security Room"
 },
 "53": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Workshop"
 },
 "54": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Entrance Lobby"
 },
 "55": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Buffet"
 },
 "56": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Library"
 },
 "57": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Clothing Store"
 },
 "58": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Storage Room"
 },
 "6": {
+"Pos": Vector2( 353, 91 ),
+"Size": Vector2( 100, 100 ),
 "name": "Kiyotaka's Bedroom"
 },
 "61": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "Downstairs Female Bathroom"
 },
 "66": {
+"Pos": Vector2( 0, 0 ),
+"Size": Vector2( 100, 100 ),
 "name": "The Twilight Zone"
 }
 }
