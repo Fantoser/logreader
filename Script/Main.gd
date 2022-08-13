@@ -67,11 +67,6 @@ func _on_Read_pressed():
 			file.close()
 		ResourceSaver.save("res://test_save.tres", session)
 		get_node("%LoadingLabel").text = ""
-#		get_node("%Areas").get_child(0).text = str(session.areas)
-#		get_node("%Areas").get_child(0).text += "\n\n\n"
-#		get_node("%Areas").get_child(0).text += str(session.characters)
-#		get_node("%Areas").get_child(0).text += "\n\n\n"
-#		get_node("%Areas").get_child(0).text += str(session.movements)
 		$"%Controls".setup()
 
 func _save_character(name):

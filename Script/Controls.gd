@@ -8,6 +8,8 @@ var bean = preload("res://Bean.png")
 
 var areas
 var prevTime
+var playing
+var playing_backward
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -82,8 +84,13 @@ func _add_areas():
 		areas.add_child(areaNode)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if playing == true and get_node("%timeScale").value != 0:
+		get_node("%timeScale").value += 1
+		_on_timeScale_scrolling()
+	if playing_backward == true and get_node("%timeScale").value != (session.endTime - session.startTime):
+		get_node("%timeScale").value -= 1
+		_on_timeScale_scrolling()
 
 
 func _on_timeScale_scrolling():
@@ -113,3 +120,33 @@ func _move_characters(newTime):
 
 func _on_SaveButton_pressed():
 	ResourceSaver.save("res://test_save.tres", session)
+
+
+func _on_Play_pressed():
+	playing_backward = false
+	playing = !playing
+
+
+func _on_Play_Backward_pressed():
+	playing = false
+	playing_backward = !playing_backward
+
+
+func _on_NextStep_pressed():
+	playing_backward = false
+	playing = false
+	for time in range(get_node("%timeScale").value + session.startTime, session.endTime):
+		if session.movements.has(time) and time > get_node("%timeScale").value + session.startTime:
+			get_node("%timeScale").value = time - session.startTime
+			_on_timeScale_scrolling()
+			break
+
+
+func _on_PrevStep_pressed():
+	playing_backward = false
+	playing = false
+	for time in range(get_node("%timeScale").value + session.startTime, session.startTime, -1):
+		if session.movements.has(time) and time < get_node("%timeScale").value + session.startTime:
+			get_node("%timeScale").value = time - session.startTime
+			_on_timeScale_scrolling()
+			break

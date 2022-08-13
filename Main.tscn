@@ -15,54 +15,58 @@ script = ExtResource( 1 )
 [node name="Controls" type="PanelContainer" parent="."]
 unique_name_in_owner = true
 margin_right = 1024.0
-margin_bottom = 212.0
+margin_bottom = 256.0
 size_flags_horizontal = 3
 script = ExtResource( 2 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Controls"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 1017.0
-margin_bottom = 205.0
+margin_bottom = 249.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Controls/VBoxContainer"]
+margin_right = 1010.0
+margin_bottom = 198.0
 mouse_filter = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="Controls/HBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="Controls/VBoxContainer/HBoxContainer"]
 margin_right = 251.0
 margin_bottom = 198.0
 rect_min_size = Vector2( 250, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Controls/HBoxContainer/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 244.0
 margin_bottom = 191.0
 
-[node name="HSeparator" type="HSeparator" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_right = 237.0
 margin_bottom = 4.0
 
-[node name="Label2" type="Label" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="Label2" type="Label" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 8.0
 margin_right = 237.0
 margin_bottom = 22.0
 text = "Map image"
 
-[node name="Image reader" type="HBoxContainer" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="Image reader" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 26.0
 margin_right = 237.0
 margin_bottom = 56.0
 rect_min_size = Vector2( 0, 30 )
 
-[node name="MapFileField" type="TextEdit" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer/Image reader"]
+[node name="MapFileField" type="TextEdit" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Image reader"]
 unique_name_in_owner = true
 margin_right = 184.0
 margin_bottom = 30.0
 size_flags_horizontal = 3
 
-[node name="MapLoad" type="Button" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer/Image reader"]
+[node name="MapLoad" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Image reader"]
 unique_name_in_owner = true
 margin_left = 188.0
 margin_right = 237.0
@@ -70,7 +74,7 @@ margin_bottom = 30.0
 focus_mode = 0
 text = "LOAD"
 
-[node name="InsertButton" type="Button" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="InsertButton" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 60.0
 margin_right = 237.0
 margin_bottom = 90.0
@@ -78,51 +82,51 @@ rect_min_size = Vector2( 0, 30 )
 focus_mode = 0
 text = "INSERT"
 
-[node name="HSeparator2" type="HSeparator" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HSeparator2" type="HSeparator" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_top = 94.0
 margin_right = 237.0
 margin_bottom = 98.0
 
-[node name="Label" type="Label" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 102.0
 margin_right = 237.0
 margin_bottom = 116.0
 text = "Log file"
 
-[node name="Logfile reader" type="HBoxContainer" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="Logfile reader" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 120.0
 margin_right = 237.0
 margin_bottom = 150.0
 rect_min_size = Vector2( 0, 30 )
 
-[node name="FilePathField" type="TextEdit" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader"]
+[node name="FilePathField" type="TextEdit" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader"]
 unique_name_in_owner = true
 margin_right = 184.0
 margin_bottom = 30.0
 size_flags_horizontal = 3
 
-[node name="FileLoadButton" type="Button" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader"]
+[node name="FileLoadButton" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader"]
 margin_left = 188.0
 margin_right = 237.0
 margin_bottom = 30.0
 focus_mode = 0
 text = "LOAD"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 154.0
 margin_right = 237.0
 margin_bottom = 184.0
 rect_min_size = Vector2( 0, 30 )
 alignment = 1
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2"]
 margin_right = 237.0
 margin_bottom = 30.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.55
 
-[node name="ReadButton" type="Button" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2"]
+[node name="ReadButton" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2"]
 unique_name_in_owner = true
 margin_right = 233.0
 margin_bottom = 30.0
@@ -130,14 +134,14 @@ focus_mode = 0
 size_flags_horizontal = 3
 text = "READ"
 
-[node name="LoadingLabel" type="Label" parent="Controls/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2"]
+[node name="LoadingLabel" type="Label" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2"]
 unique_name_in_owner = true
 margin_left = 237.0
 margin_top = 8.0
 margin_right = 237.0
 margin_bottom = 22.0
 
-[node name="PanelContainer2" type="PanelContainer" parent="Controls/HBoxContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="Controls/VBoxContainer/HBoxContainer"]
 margin_left = 255.0
 margin_right = 1010.0
 margin_bottom = 198.0
@@ -145,13 +149,13 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 3.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Controls/HBoxContainer/PanelContainer2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 748.0
 margin_bottom = 191.0
 
-[node name="Characters" type="GridContainer" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer"]
+[node name="Characters" type="GridContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer"]
 unique_name_in_owner = true
 margin_right = 741.0
 margin_bottom = 90.0
@@ -159,90 +163,127 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 7
 
-[node name="HBoxContainer" type="VBoxContainer" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer"]
+[node name="HBoxContainer" type="VBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer"]
 margin_top = 94.0
 margin_right = 741.0
 margin_bottom = 184.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer"]
 margin_right = 741.0
-margin_bottom = 43.0
+margin_bottom = 90.0
 rect_min_size = Vector2( 0, 20 )
 size_flags_vertical = 3
 
-[node name="SaveButton" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
+[node name="SaveButton" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
 margin_right = 43.0
-margin_bottom = 43.0
+margin_bottom = 90.0
 focus_mode = 0
 text = "SAVE"
 
-[node name="LoadButton" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
+[node name="LoadButton" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
 margin_left = 47.0
 margin_right = 96.0
-margin_bottom = 43.0
+margin_bottom = 90.0
 focus_mode = 0
 text = "LOAD"
 
-[node name="Button3" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
+[node name="Button3" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
 margin_left = 100.0
 margin_right = 167.0
-margin_bottom = 43.0
+margin_bottom = 90.0
 focus_mode = 0
 text = "A THING"
 
-[node name="Button4" type="Button" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
+[node name="Button4" type="Button" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
 margin_left = 171.0
 margin_right = 258.0
-margin_bottom = 43.0
+margin_bottom = 90.0
 focus_mode = 0
 text = "YOUR MOM"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer"]
-margin_top = 47.0
-margin_right = 741.0
-margin_bottom = 90.0
+[node name="HBoxContainer2" type="HBoxContainer" parent="Controls/VBoxContainer"]
+margin_top = 202.0
+margin_right = 1010.0
+margin_bottom = 242.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls/VBoxContainer/HBoxContainer2"]
+margin_right = 1010.0
+margin_bottom = 40.0
 rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="CenterContainer" type="HBoxContainer" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/VBoxContainer"]
-margin_top = 6.0
-margin_right = 741.0
-margin_bottom = 20.0
+[node name="CenterContainer" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 2.0
+margin_right = 1010.0
+margin_bottom = 22.0
 alignment = 1
 
-[node name="currentTime" type="Label" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/VBoxContainer/CenterContainer"]
+[node name="PrevStep" type="Button" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer"]
+margin_left = 430.0
+margin_right = 458.0
+margin_bottom = 20.0
+focus_mode = 0
+text = "<<"
+
+[node name="Play_Backward" type="Button" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer"]
+margin_left = 462.0
+margin_right = 482.0
+margin_bottom = 20.0
+focus_mode = 0
+text = "<"
+
+[node name="currentTime" type="Label" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer"]
 unique_name_in_owner = true
-margin_left = 352.0
-margin_right = 360.0
-margin_bottom = 14.0
+margin_left = 486.0
+margin_top = 3.0
+margin_right = 494.0
+margin_bottom = 17.0
 text = "0"
 
-[node name="Label3" type="Label" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/VBoxContainer/CenterContainer"]
-margin_left = 364.0
-margin_right = 377.0
-margin_bottom = 14.0
+[node name="Label3" type="Label" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer"]
+margin_left = 498.0
+margin_top = 3.0
+margin_right = 511.0
+margin_bottom = 17.0
 text = " / "
 
-[node name="endTime" type="Label" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/VBoxContainer/CenterContainer"]
+[node name="endTime" type="Label" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer"]
 unique_name_in_owner = true
-margin_left = 381.0
-margin_right = 389.0
-margin_bottom = 14.0
+margin_left = 515.0
+margin_top = 3.0
+margin_right = 523.0
+margin_bottom = 17.0
 text = "0"
 
-[node name="timeScale" type="HScrollBar" parent="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="Play" type="Button" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer"]
+margin_left = 527.0
+margin_right = 547.0
+margin_bottom = 20.0
+focus_mode = 0
+text = ">"
+
+[node name="NextStep" type="Button" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer"]
+margin_left = 551.0
+margin_right = 579.0
+margin_bottom = 20.0
+focus_mode = 0
+text = ">>"
+
+[node name="timeScale" type="HScrollBar" parent="Controls/VBoxContainer/HBoxContainer2/VBoxContainer"]
 unique_name_in_owner = true
-margin_top = 24.0
-margin_right = 741.0
-margin_bottom = 36.0
+margin_top = 26.0
+margin_right = 1010.0
+margin_bottom = 38.0
 size_flags_horizontal = 3
 max_value = 0.0
+step = 1.0
 
 [node name="Output" type="PanelContainer" parent="."]
-margin_top = 216.0
+margin_top = 260.0
 margin_right = 1024.0
 margin_bottom = 600.0
 mouse_filter = 2
@@ -253,12 +294,12 @@ size_flags_vertical = 3
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 1017.0
-margin_bottom = 377.0
+margin_bottom = 333.0
 mouse_filter = 2
 
 [node name="ViewportContainer" type="ViewportContainer" parent="Output/HBoxContainer"]
 margin_right = 598.0
-margin_bottom = 370.0
+margin_bottom = 326.0
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -266,7 +307,7 @@ stretch = true
 
 [node name="MapView" type="Viewport" parent="Output/HBoxContainer/ViewportContainer"]
 unique_name_in_owner = true
-size = Vector2( 598, 370 )
+size = Vector2( 598, 326 )
 handle_input_locally = false
 disable_3d = true
 usage = 0
@@ -281,27 +322,31 @@ position = Vector2( 598, 370 )
 [node name="VSeparator" type="VSeparator" parent="Output/HBoxContainer"]
 margin_left = 602.0
 margin_right = 606.0
-margin_bottom = 370.0
+margin_bottom = 326.0
 
 [node name="PanelContainer" type="PanelContainer" parent="Output/HBoxContainer"]
 self_modulate = Color( 0.584314, 0.584314, 0.584314, 1 )
 margin_left = 610.0
 margin_right = 1010.0
-margin_bottom = 370.0
+margin_bottom = 326.0
 rect_min_size = Vector2( 400, 0 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Output/HBoxContainer/PanelContainer"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 393.0
-margin_bottom = 363.0
+margin_bottom = 319.0
 
 [node name="Log" type="VBoxContainer" parent="Output/HBoxContainer/PanelContainer/ScrollContainer"]
 unique_name_in_owner = true
 
-[connection signal="pressed" from="Controls/HBoxContainer/PanelContainer/VBoxContainer/Image reader/MapLoad" to="Controls" method="_on_MapLoad_pressed"]
-[connection signal="pressed" from="Controls/HBoxContainer/PanelContainer/VBoxContainer/InsertButton" to="Controls" method="_on_InsertButton_pressed"]
-[connection signal="pressed" from="Controls/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader/FileLoadButton" to="." method="_on_FileLoad_pressed"]
-[connection signal="pressed" from="Controls/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2/ReadButton" to="." method="_on_Read_pressed"]
-[connection signal="pressed" from="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer/SaveButton" to="Controls" method="_on_SaveButton_pressed"]
-[connection signal="scrolling" from="Controls/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/VBoxContainer/timeScale" to="Controls" method="_on_timeScale_scrolling"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Image reader/MapLoad" to="Controls" method="_on_MapLoad_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/InsertButton" to="Controls" method="_on_InsertButton_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader/FileLoadButton" to="." method="_on_FileLoad_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2/ReadButton" to="." method="_on_Read_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer/SaveButton" to="Controls" method="_on_SaveButton_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/PrevStep" to="Controls" method="_on_PrevStep_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/Play_Backward" to="Controls" method="_on_Play_Backward_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/Play" to="Controls" method="_on_Play_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/NextStep" to="Controls" method="_on_NextStep_pressed"]
+[connection signal="scrolling" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/timeScale" to="Controls" method="_on_timeScale_scrolling"]
