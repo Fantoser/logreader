@@ -49,6 +49,6 @@ func _input(event):
 		if bgDrag == true:
 			rect_position += event.get_relative() * camera.zoom.x
 		if scaleDrag == true:
-			$Background.rect_size += event.get_relative() * camera.zoom.x
+			rect_size += event.get_relative() * camera.zoom.x
 	if scaleDrag:
 		_place_buttons()
