@@ -50,13 +50,7 @@ func _on_Read_pressed():
 		get_node("%LoadingLabel").text = "No file selected"
 	else:
 		get_node("%LoadingLabel").text = "Loading..."
-		var t = Timer.new()
-		t.set_wait_time(0.1)
-		t.set_one_shot(true)
-		self.add_child(t)	#7 line of code cause there is no wait() function WOOO
-		t.start()
-		yield(t, "timeout")
-		t.queue_free()
+		yield(get_tree().create_timer(0.1), "timeout")
 
 		var file = File.new()
 		if file.open(get_node("%FilePathField").text,file.READ) == OK:
