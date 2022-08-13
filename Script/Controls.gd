@@ -111,14 +111,5 @@ func _move_characters(newTime):
 					areas.get_node(movement[from]).get_node("Grid").remove_child(character)
 					areas.get_node(movement[to]).get_node("Grid").add_child(character)
 
-func _move_characters_backward(newTime):
-	for time in range(newTime, prevTime):
-		if session.movements.has(time):
-			for movement in session.movements[time]:
-				if areas.get_node(movement["to"]).get_node("Grid").has_node(str(movement["character"])):
-					var character = areas.get_node(movement["to"]).get_node("Grid").get_node(str(movement["character"]))
-					areas.get_node(movement["to"]).get_node("Grid").remove_child(character)
-					areas.get_node(movement["from"]).get_node("Grid").add_child(character)
-
 func _on_SaveButton_pressed():
 	ResourceSaver.save("res://test_save.tres", session)
