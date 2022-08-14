@@ -8,7 +8,6 @@
 [node name="Area" type="Control"]
 margin_right = 100.0
 margin_bottom = 100.0
-mouse_filter = 2
 script = ExtResource( 1 )
 
 [node name="Background" type="TextureButton" parent="."]

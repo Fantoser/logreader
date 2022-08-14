@@ -11,7 +11,7 @@ current = true
 [node name="MapImage" type="Sprite" parent="."]
 position = Vector2( -1, 2 )
 
+[node name="AreasRects" type="Node2D" parent="."]
+
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 1024, 600 )
-
-[node name="AreasRects" type="Node2D" parent="."]

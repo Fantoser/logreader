@@ -130,12 +130,15 @@ func _add_areas():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if playing == true and get_node("%timeScale").value != 0:
+	if get_node("%timeScale").value != prevTime and get_node("%endTime").text != "0":
+		get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
+		var newTime = Time.get_unix_time_from_datetime_string(get_node("%currentTime").text)
+		_move_characters(newTime)
+	
+	if playing == true and get_node("%timeScale").value != (session.endTime - session.startTime):
 		get_node("%timeScale").value += 1
-		_on_timeScale_scrolling()
-	if playing_backward == true and get_node("%timeScale").value != (session.endTime - session.startTime):
+	if playing_backward == true and get_node("%timeScale").value != 0:
 		get_node("%timeScale").value -= 1
-		_on_timeScale_scrolling()
 
 
 func _on_timeScale_scrolling():

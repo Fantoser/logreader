@@ -308,7 +308,6 @@ stretch = true
 [node name="MapView" type="Viewport" parent="Output/HBoxContainer/ViewportContainer"]
 unique_name_in_owner = true
 size = Vector2( 598, 326 )
-handle_input_locally = false
 disable_3d = true
 usage = 0
 render_target_update_mode = 3
@@ -354,4 +353,3 @@ margin_bottom = 130.0
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/Play_Backward" to="Controls" method="_on_Play_Backward_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/Play" to="Controls" method="_on_Play_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/NextStep" to="Controls" method="_on_NextStep_pressed"]
-[connection signal="scrolling" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/timeScale" to="Controls" method="_on_timeScale_scrolling"]
