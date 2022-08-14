@@ -54,6 +54,7 @@ func _on_Read_pressed():
 
 		var file = File.new()
 		if file.open(get_node("%FilePathField").text,file.READ) == OK:
+			$Controls.clear()
 			var index = 1
 			while not file.eof_reached(): # iterate through all lines until the end of file is reached
 				var line = file.get_line()

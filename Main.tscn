@@ -340,11 +340,16 @@ margin_bottom = 319.0
 [node name="Log" type="VBoxContainer" parent="Output/HBoxContainer/PanelContainer/ScrollContainer"]
 unique_name_in_owner = true
 
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_right = 315.0
+margin_bottom = 130.0
+
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Image reader/MapLoad" to="Controls" method="_on_MapLoad_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/InsertButton" to="Controls" method="_on_InsertButton_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/Logfile reader/FileLoadButton" to="." method="_on_FileLoad_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer2/HBoxContainer2/ReadButton" to="." method="_on_Read_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer/SaveButton" to="Controls" method="_on_SaveButton_pressed"]
+[connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer/LoadButton" to="Controls" method="_on_LoadButton_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/PrevStep" to="Controls" method="_on_PrevStep_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/Play_Backward" to="Controls" method="_on_Play_Backward_pressed"]
 [connection signal="pressed" from="Controls/VBoxContainer/HBoxContainer2/VBoxContainer/CenterContainer/Play" to="Controls" method="_on_Play_pressed"]

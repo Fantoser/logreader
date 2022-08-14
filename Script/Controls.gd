@@ -15,6 +15,12 @@ var playing_backward
 func _ready():
 	areas = get_node("%Map").get_node("AreasRects")
 
+func clear():
+	for child in get_node("%Characters").get_children():
+		child.queue_free()
+	for child in get_node("%Map").get_node("AreasRects").get_children():
+		child.queue_free()
+
 func _on_MapLoad_pressed():
 	var selector = FileDialog.new()
 	selector.add_filter("*.png, *.jpg, *.jpeg, *.bmp")
@@ -38,6 +44,34 @@ func _on_InsertButton_pressed():
 	texture.create_from_image(image)
 
 	get_node("%Map").get_node("MapImage").texture = texture
+
+func _on_SaveButton_pressed():
+	var selector = FileDialog.new()
+	selector.add_filter("*.tres")
+	selector.set_mode(selector.MODE_SAVE_FILE)
+	selector.set_access(selector.ACCESS_FILESYSTEM)
+#	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
+	self.add_child(selector)
+	selector.popup_centered_clamped(Vector2(600,400))
+	var filePath = yield(selector,"file_selected")
+	print(filePath)
+	if filePath != null:
+		ResourceSaver.save(filePath, session)
+
+func _on_LoadButton_pressed():
+	var selector = FileDialog.new()
+	selector.add_filter("*.tres")
+	selector.set_mode(selector.MODE_OPEN_FILE)
+	selector.set_access(selector.ACCESS_FILESYSTEM)
+#	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
+	self.add_child(selector)
+	selector.popup_centered_clamped(Vector2(600,400))
+	var filePath = yield(selector,"file_selected")
+	if filePath != null:
+		clear()
+		session = ResourceLoader.load(filePath)
+		setup()
+		
 
 func setup():
 	get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
@@ -118,9 +152,6 @@ func _move_characters(newTime):
 					areas.get_node(movement[from]).get_node("%Grid").remove_child(character)
 					areas.get_node(movement[to]).get_node("%Grid").add_child(character)
 
-func _on_SaveButton_pressed():
-	ResourceSaver.save("res://test_save.tres", session)
-
 
 func _on_Play_pressed():
 	playing_backward = false
@@ -150,3 +181,4 @@ func _on_PrevStep_pressed():
 			get_node("%timeScale").value = time - session.startTime
 			_on_timeScale_scrolling()
 			break
+
