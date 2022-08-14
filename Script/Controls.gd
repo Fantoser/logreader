@@ -11,6 +11,8 @@ var prevTime
 var playing
 var playing_backward
 
+var loading
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	areas = get_node("%Map").get_node("AreasRects")
@@ -31,8 +33,9 @@ func _on_MapLoad_pressed():
 	selector.popup_centered_clamped(Vector2(600,400))
 	get_node("%MapFileField").text = yield(selector,"file_selected")
 
-func _on_InsertButton_pressed():
-	var image_path = get_node("%MapFileField").text
+func _on_InsertButton_pressed(image_path = null):
+	if image_path == null:
+		image_path = get_node("%MapFileField").text
 
 	var image = Image.new()
 	var error = image.load(image_path)
@@ -43,6 +46,7 @@ func _on_InsertButton_pressed():
 	var texture = ImageTexture.new()
 	texture.create_from_image(image)
 
+	session.map = image_path
 	get_node("%Map").get_node("MapImage").texture = texture
 
 func _on_SaveButton_pressed():
@@ -54,7 +58,6 @@ func _on_SaveButton_pressed():
 	self.add_child(selector)
 	selector.popup_centered_clamped(Vector2(600,400))
 	var filePath = yield(selector,"file_selected")
-	print(filePath)
 	if filePath != null:
 		ResourceSaver.save(filePath, session)
 
@@ -68,8 +71,10 @@ func _on_LoadButton_pressed():
 	selector.popup_centered_clamped(Vector2(600,400))
 	var filePath = yield(selector,"file_selected")
 	if filePath != null:
+		loading = true
 		clear()
 		session = ResourceLoader.load(filePath)
+		_on_InsertButton_pressed(session.map)
 		setup()
 		
 
@@ -114,7 +119,13 @@ func _add_areas():
 		areaNode.session = session
 		areaNode.id = id
 		areaNode.areaName = session.areas[id]["name"]
-		areaNode.rect_position = Vector2(areas.get_child_count() * areaNode.rect_size.x+10, 0)
+		if loading == false:
+			areaNode.rect_position = Vector2(areas.get_child_count() * areaNode.rect_size.x+10, 0)
+			session.areas[id]["Pos"] = areaNode.rect_position
+			session.areas[id]["Size"] = Vector2(100, 100)
+		else:
+			areaNode.rect_position = session.areas[id]["Pos"]
+			areaNode.rect_size = session.areas[id]["Size"]
 		areas.add_child(areaNode)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

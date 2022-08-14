@@ -1,6 +1,8 @@
 extends Resource
 class_name Session
 
+export(ImageTexture) var map
+
 export(String) var startTime = 0
 
 export(String) var endTime = 0
