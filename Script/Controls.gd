@@ -10,6 +10,7 @@ var areas
 var prevTime
 var playing
 var playing_backward
+var timer = 0
 
 var loading
 
@@ -136,9 +137,17 @@ func _process(delta):
 		_move_characters(newTime)
 	
 	if playing == true and get_node("%timeScale").value != (session.endTime - session.startTime):
-		get_node("%timeScale").value += 1
+		if timer <= 0:
+			get_node("%timeScale").value += 1
+			timer = (get_node("%playDelay").value * 60)
+		else:
+			timer -= 1
 	if playing_backward == true and get_node("%timeScale").value != 0:
-		get_node("%timeScale").value -= 1
+		if timer <= 0:
+			get_node("%timeScale").value -= 1
+			timer = (get_node("%playDelay").value * 60)
+		else:
+			timer -= 1
 
 
 func _on_timeScale_scrolling():
