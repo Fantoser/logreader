@@ -135,6 +135,7 @@ func _process(delta):
 		get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
 		var newTime = Time.get_unix_time_from_datetime_string(get_node("%currentTime").text)
 		_move_characters(newTime)
+		prevTime = newTime
 	
 	if playing == true and get_node("%timeScale").value != (session.endTime - session.startTime):
 		if timer <= 0:
@@ -162,6 +163,7 @@ func _move_characters(newTime):
 	var to = "to"
 	var fromTime = prevTime
 	var toTime = newTime
+	var fromArea
 	if newTime < prevTime:
 		from = "to"
 		to = "from"
@@ -170,11 +172,21 @@ func _move_characters(newTime):
 	for time in range(fromTime, toTime):
 		if session.movements.has(time):
 			for movement in session.movements[time]:
+				fromArea = movement[from]
 				if areas.get_node(movement[from]).get_node("%Grid").has_node(str(movement["character"])):
-					var character = areas.get_node(movement[from]).get_node("%Grid").get_node(str(movement["character"]))
-					areas.get_node(movement[from]).get_node("%Grid").remove_child(character)
-					areas.get_node(movement[to]).get_node("%Grid").add_child(character)
+					fromArea = str(movement[from])
+				else:
+					print(time)
+					print(movement)
+					fromArea = _find_character(str(movement["character"]))
+				var character = areas.get_node(fromArea).get_node("%Grid").get_node(str(movement["character"]))
+				areas.get_node(fromArea).get_node("%Grid").remove_child(character)
+				areas.get_node(movement[to]).get_node("%Grid").add_child(character)
 
+func _find_character(id):
+	for area in areas.get_children():
+		if area.get_node("%Grid").has_node(id):
+			return str(area.name)
 
 func _on_Play_pressed():
 	playing_backward = false
