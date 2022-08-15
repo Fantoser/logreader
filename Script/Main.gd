@@ -68,6 +68,7 @@ func _on_Read_pressed():
 			file.close()
 		ResourceSaver.save("res://test_save.tres", session)
 		get_node("%LoadingLabel").text = ""
+		$"%Controls".loading = false
 		$"%Controls".setup()
 
 func _save_character(name):
