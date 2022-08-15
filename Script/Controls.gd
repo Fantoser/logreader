@@ -104,6 +104,7 @@ func _add_characters():
 		var characterNode = character.instance()
 		characterNode.get_node("%Name").text = session.characters[id]["name"]
 		characterNode.get_node("%Icon").self_modulate = Color(session.characters[id]["color"])
+		characterNode.get_node("%Visibility").connect("toggled", self, "set_character_visible", [id])
 		get_node("%Characters").add_child(characterNode)
 
 		var mapChar = TextureRect.new()
@@ -112,6 +113,10 @@ func _add_characters():
 		mapChar.texture = bean
 		mapChar.self_modulate = session.characters[id]["color"]
 		areas.get_node(str(session.characters[id]["startLocation"])).get_node("%Grid").add_child(mapChar)
+		session.characters[id]["mapchar"] = mapChar
+
+func set_character_visible(toggle, id):
+	session.characters[id]["mapchar"].set_visible(not toggle)
 
 func _add_areas():
 	for id in session.areas:
