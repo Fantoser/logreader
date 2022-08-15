@@ -187,6 +187,9 @@ func _move_characters(newTime):
 				var character = areas.get_node(fromArea).get_node("%Grid").get_node(str(movement["character"]))
 				areas.get_node(fromArea).get_node("%Grid").remove_child(character)
 				areas.get_node(movement[to]).get_node("%Grid").add_child(character)
+				var tween = get_tree().create_tween()
+				tween.tween_property(character, "rect_scale", Vector2(2, 2), 0.05).set_ease(Tween.EASE_OUT)
+				tween.tween_property(character, "rect_scale", Vector2(1, 1), 0.5)
 
 func _find_character(id):
 	for area in areas.get_children():
