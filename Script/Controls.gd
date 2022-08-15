@@ -136,7 +136,7 @@ func _add_areas():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if get_node("%timeScale").value != prevTime and get_node("%endTime").text != "0":
+	if get_node("%timeScale").value + session.startTime != prevTime and get_node("%endTime").text != "0":
 		get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
 		var newTime = Time.get_unix_time_from_datetime_string(get_node("%currentTime").text)
 		_move_characters(newTime)
@@ -164,6 +164,12 @@ func _on_timeScale_scrolling():
 		prevTime = newTime
 
 func _move_characters(newTime):
+	if newTime == session.startTime:
+		for area in areas.get_children():
+			for character in area.get_node("%Grid").get_children():
+				area.get_node("%Grid").remove_child(character)
+				areas.get_node(session.characters[int(character.name)]["startLocation"]).get_node("%Grid").add_child(character)
+		return
 	var from = "from"
 	var to = "to"
 	var fromTime = prevTime
@@ -181,8 +187,6 @@ func _move_characters(newTime):
 				if areas.get_node(movement[from]).get_node("%Grid").has_node(str(movement["character"])):
 					fromArea = str(movement[from])
 				else:
-					print(time)
-					print(movement)
 					fromArea = _find_character(str(movement["character"]))
 				var character = areas.get_node(fromArea).get_node("%Grid").get_node(str(movement["character"]))
 				areas.get_node(fromArea).get_node("%Grid").remove_child(character)
