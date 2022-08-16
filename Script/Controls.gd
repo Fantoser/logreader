@@ -11,6 +11,7 @@ var prevTime
 var playing
 var playing_backward
 var timer = 0
+var mapChars = {}
 
 var loading
 
@@ -29,7 +30,7 @@ func _on_MapLoad_pressed():
 	selector.add_filter("*.png, *.jpg, *.jpeg, *.bmp")
 	selector.set_mode(selector.MODE_OPEN_FILE)
 	selector.set_access(selector.ACCESS_FILESYSTEM)
-#	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
+	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
 	self.add_child(selector)
 	selector.popup_centered_clamped(Vector2(600,400))
 	get_node("%MapFileField").text = yield(selector,"file_selected")
@@ -55,7 +56,7 @@ func _on_SaveButton_pressed():
 	selector.add_filter("*.tres")
 	selector.set_mode(selector.MODE_SAVE_FILE)
 	selector.set_access(selector.ACCESS_FILESYSTEM)
-#	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
+	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
 	self.add_child(selector)
 	selector.popup_centered_clamped(Vector2(600,400))
 	var filePath = yield(selector,"file_selected")
@@ -67,7 +68,7 @@ func _on_LoadButton_pressed():
 	selector.add_filter("*.tres")
 	selector.set_mode(selector.MODE_OPEN_FILE)
 	selector.set_access(selector.ACCESS_FILESYSTEM)
-#	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
+	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
 	self.add_child(selector)
 	selector.popup_centered_clamped(Vector2(600,400))
 	var filePath = yield(selector,"file_selected")
@@ -102,8 +103,10 @@ func _add_characters():
 	var areas = get_node("%Map").get_node("AreasRects")
 	for id in session.characters:
 		var characterNode = character.instance()
+		characterNode.name = str(id)
 		characterNode.get_node("%Name").text = session.characters[id]["name"]
 		characterNode.get_node("%Icon").self_modulate = Color(session.characters[id]["color"])
+		characterNode.get_node("%Icon").connect("pressed", self, "set_character_icon", [id])
 		characterNode.get_node("%Visibility").connect("toggled", self, "set_character_visible", [id])
 		get_node("%Characters").add_child(characterNode)
 
@@ -113,10 +116,33 @@ func _add_characters():
 		mapChar.texture = bean
 		mapChar.self_modulate = session.characters[id]["color"]
 		areas.get_node(str(session.characters[id]["startLocation"])).get_node("%Grid").add_child(mapChar)
-		session.characters[id]["mapchar"] = mapChar
+		mapChars[id] = mapChar
 
 func set_character_visible(toggle, id):
-	session.characters[id]["mapchar"].set_visible(not toggle)
+	mapChars[id].set_visible(not toggle)
+
+func set_character_icon(id):
+	var selector = FileDialog.new()
+	selector.add_filter("*.png, *.jpg, *.jpeg, *.bmp")
+	selector.set_mode(selector.MODE_OPEN_FILE)
+	selector.set_access(selector.ACCESS_FILESYSTEM)
+	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
+	self.add_child(selector)
+	selector.popup_centered_clamped(Vector2(600,400))
+	var image_path = yield(selector,"file_selected")
+	if image_path != null:
+		var image = Image.new()
+		var error = image.load(image_path)
+		if error != OK:
+			print("Error loading image file")
+			return
+
+		var texture = ImageTexture.new()
+		texture.create_from_image(image)
+		mapChars[id].texture = texture
+		mapChars[id].self_modulate = Color.white
+		get_node("%Characters").get_node(str(id)).get_node("%Icon").texture_normal = texture
+		get_node("%Characters").get_node(str(id)).get_node("%Icon").self_modulate = Color.white
 
 func _add_areas():
 	for id in session.areas:
@@ -253,9 +279,3 @@ func _on_PrevStep_pressed():
 			get_node("%timeScale").value = time - session.startTime
 			_on_timeScale_scrolling()
 			break
-
-func _on_Minus_pressed():
-	get_node("%timeScale").value -= 1
-
-func _on_Plus_pressed():
-	get_node("%timeScale").value += 1

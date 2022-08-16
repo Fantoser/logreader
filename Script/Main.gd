@@ -40,7 +40,7 @@ func _on_FileLoad_pressed():
 	selector.add_filter("*.log")
 	selector.set_mode(selector.MODE_OPEN_FILE)
 	selector.set_access(selector.ACCESS_FILESYSTEM)
-#	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
+	selector.current_dir = OS.get_system_dir(OS.SYSTEM_DIR_DESKTOP)
 	self.add_child(selector)
 	selector.popup_centered_clamped(Vector2(600,400))
 	get_node("%FilePathField").text = yield(selector,"file_selected")
