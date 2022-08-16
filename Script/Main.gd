@@ -76,7 +76,8 @@ func _save_character(name):
 		"name": name,
 		"color": Color(colors[session.characters.size()]),
 		"location": null,
-		"startLocation": null
+		"startLocation": null,
+		"movements": []
 	}
 	_check_unclaimed_movements(name)
 
@@ -269,7 +270,15 @@ func _process_move(line):
 
 	if session.characters[charID]["startLocation"] == null:
 		session.characters[charID]["startLocation"] = fromID
+		session.characters[charID]["movements"].append([
+			session.startTime, fromID, fromID
+		])
 	session.characters[charID]["location"] = toID
+	
+	session.characters[charID]["movements"].append([
+			time, fromID, toID
+		])
+	
 	if session.movements.has(time) == false:
 		session.movements[time] = []
 	session.movements[time].append({

@@ -163,41 +163,66 @@ func _on_timeScale_scrolling():
 		_move_characters(newTime)
 		prevTime = newTime
 
+#func _move_characters(newTime):
+#	if newTime == session.startTime:
+#		for area in areas.get_children():
+#			for character in area.get_node("%Grid").get_children():
+#				area.get_node("%Grid").remove_child(character)
+#				areas.get_node(session.characters[int(character.name)]["startLocation"]).get_node("%Grid").add_child(character)
+#		return
+#	var from = "from"
+#	var to = "to"
+#	var fromTime = session.startTime
+#	var toTime = newTime
+#	var fromArea
+#	var step = 1
+#	if newTime < prevTime:
+#		from = "to"
+#		to = "from"
+#		fromTime = session.endTime
+#		toTime = prevTime
+#		step = -1
+#	for time in range(fromTime, toTime, step):
+#		if session.movements.has(time):
+#			for movement in session.movements[time]:
+#				fromArea = movement[from]
+#				if areas.get_node(movement[from]).get_node("%Grid").has_node(str(movement["character"])):
+#					fromArea = str(movement[from])
+#				else:
+#					fromArea = _find_character(str(movement["character"]))
+#				var character = areas.get_node(fromArea).get_node("%Grid").get_node(str(movement["character"]))
+#				areas.get_node(fromArea).get_node("%Grid").remove_child(character)
+#				areas.get_node(movement[to]).get_node("%Grid").add_child(character)
+#				var tween = get_tree().create_tween()
+#				tween.tween_property(character, "rect_scale", Vector2(2, 2), 0.05).set_ease(Tween.EASE_OUT)
+#				tween.tween_property(character, "rect_scale", Vector2(1, 1), 0.5)
+
 func _move_characters(newTime):
-	if newTime == session.startTime:
-		for area in areas.get_children():
-			for character in area.get_node("%Grid").get_children():
-				area.get_node("%Grid").remove_child(character)
-				areas.get_node(session.characters[int(character.name)]["startLocation"]).get_node("%Grid").add_child(character)
-		return
-	var from = "from"
-	var to = "to"
-	var fromTime = prevTime
-	var toTime = newTime
-	var fromArea
-	if newTime < prevTime:
-		from = "to"
-		to = "from"
-		fromTime = newTime
-		toTime = prevTime
-	for time in range(fromTime, toTime):
-		if session.movements.has(time):
-			for movement in session.movements[time]:
-				fromArea = movement[from]
-				if areas.get_node(movement[from]).get_node("%Grid").has_node(str(movement["character"])):
-					fromArea = str(movement[from])
-				else:
-					fromArea = _find_character(str(movement["character"]))
-				var character = areas.get_node(fromArea).get_node("%Grid").get_node(str(movement["character"]))
-				areas.get_node(fromArea).get_node("%Grid").remove_child(character)
-				areas.get_node(movement[to]).get_node("%Grid").add_child(character)
-				var tween = get_tree().create_tween()
-				tween.tween_property(character, "rect_scale", Vector2(2, 2), 0.05).set_ease(Tween.EASE_OUT)
-				tween.tween_property(character, "rect_scale", Vector2(1, 1), 0.5)
+	for charID in session.characters:
+		var toLocation = _find_charLocation(charID, newTime)
+		if areas.get_node(toLocation).get_node("%Grid").has_node(str(charID)):
+			continue
+		else:
+			var fromLocation = _find_character(charID)
+			var character = areas.get_node(fromLocation).get_node("%Grid").get_node(str(charID))
+			areas.get_node(fromLocation).get_node("%Grid").remove_child(character)
+			areas.get_node(toLocation).get_node("%Grid").add_child(character)
+			var tween = get_tree().create_tween()
+			tween.tween_property(character, "rect_scale", Vector2(2, 2), 0.05).set_ease(Tween.EASE_OUT)
+			tween.tween_property(character, "rect_scale", Vector2(1, 1), 0.5)
+
+func _find_charLocation(charID, newTime):
+	var result
+	for movement in session.characters[charID]["movements"]:
+		if movement[0] <= newTime:
+			result = movement[2]
+		else:
+			return result
+	return result
 
 func _find_character(id):
 	for area in areas.get_children():
-		if area.get_node("%Grid").has_node(id):
+		if area.get_node("%Grid").has_node(str(id)):
 			return str(area.name)
 
 func _on_Play_pressed():
@@ -229,3 +254,8 @@ func _on_PrevStep_pressed():
 			_on_timeScale_scrolling()
 			break
 
+func _on_Minus_pressed():
+	get_node("%timeScale").value -= 1
+
+func _on_Plus_pressed():
+	get_node("%timeScale").value += 1
