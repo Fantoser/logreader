@@ -42,5 +42,6 @@ func _input(event):
 	session.areas[id]["Pos"] = rect_position
 	var min_size_x = 0
 	for child in $"%CharContainer".get_children():
-		min_size_x += child.rect_size.x
+		if child.visible:
+			min_size_x += child.rect_size.x
 	$"%CharContainer".rect_min_size.x = min(rect_size.x, min_size_x)
