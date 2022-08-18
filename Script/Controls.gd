@@ -110,11 +110,27 @@ func _add_characters():
 		characterNode.get_node("%Visibility").connect("toggled", self, "set_character_visible", [id])
 		get_node("%Characters").add_child(characterNode)
 
+		var charTexture = bean
+
+		if session.characters[id].has("icon") == true:
+			var image = Image.new()
+			var error = image.load(session.characters[id]["icon"])
+			if error != OK:
+				print("Error loading image file")
+				return
+
+			var texture = ImageTexture.new()
+			texture.create_from_image(image)
+			charTexture = texture
+			characterNode.get_node("%Icon").self_modulate = Color.white
+			characterNode.get_node("%Icon").texture_normal = charTexture
+
 		var mapChar = TextureRect.new()
 		mapChar.name = str(id)
 		mapChar.mouse_filter = MOUSE_FILTER_IGNORE
-		mapChar.texture = bean
-		mapChar.self_modulate = session.characters[id]["color"]
+		mapChar.texture = charTexture
+		if session.characters[id].has("icon") == false:
+			mapChar.self_modulate = session.characters[id]["color"]
 		areas.get_node(str(session.characters[id]["startLocation"])).get_node("%Grid").add_child(mapChar)
 		mapChars[id] = mapChar
 
@@ -141,6 +157,7 @@ func set_character_icon(id):
 		texture.create_from_image(image)
 		mapChars[id].texture = texture
 		mapChars[id].self_modulate = Color.white
+		session.characters[id]["icon"] = image_path
 		get_node("%Characters").get_node(str(id)).get_node("%Icon").texture_normal = texture
 		get_node("%Characters").get_node(str(id)).get_node("%Icon").self_modulate = Color.white
 
