@@ -281,18 +281,26 @@ func _on_Play_Backward_pressed():
 func _on_NextStep_pressed():
 	playing_backward = false
 	playing = false
-	for time in range(get_node("%timeScale").value + session.startTime, session.endTime):
-		if session.movements.has(time) and time > get_node("%timeScale").value + session.startTime:
-			get_node("%timeScale").value = time - session.startTime
-			_on_timeScale_scrolling()
-			break
+	var newTime = session.endTime
+	for charID in session.characters:
+		for movement in session.characters[charID]["movements"]:
+			if movement[0] > get_node("%timeScale").value + session.startTime:
+				if movement[0] < newTime:
+					newTime = movement[0]
+				break
+	get_node("%timeScale").value = newTime - session.startTime
+
 
 
 func _on_PrevStep_pressed():
 	playing_backward = false
 	playing = false
-	for time in range(get_node("%timeScale").value + session.startTime, session.startTime, -1):
-		if session.movements.has(time) and time < get_node("%timeScale").value + session.startTime:
-			get_node("%timeScale").value = time - session.startTime
-			_on_timeScale_scrolling()
-			break
+	var newTime = session.startTime
+	if get_node("%timeScale").value != 0:
+		for charID in session.characters:
+			for movement in range(session.characters[charID]["movements"].size()-1, 0, -1):
+				if session.characters[charID]["movements"][movement][0] < get_node("%timeScale").value + session.startTime:
+						if session.characters[charID]["movements"][movement][0] > newTime:
+							newTime = session.characters[charID]["movements"][movement][0]
+						break
+	get_node("%timeScale").value = newTime - session.startTime
