@@ -40,3 +40,7 @@ func _input(event):
 			rect_size += event.get_relative() * camera.zoom.x
 	session.areas[id]["Size"] = rect_size
 	session.areas[id]["Pos"] = rect_position
+	var min_size_x = 0
+	for child in $"%CharContainer".get_children():
+		min_size_x += child.rect_size.x
+	$"%CharContainer".rect_min_size.x = min(rect_size.x, min_size_x)
