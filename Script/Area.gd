@@ -14,7 +14,6 @@ func _ready():
 	camera = get_parent().get_parent().get_node("Camera")
 	$Label.text = areaName
 	self.name = id
-	_place_buttons()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -33,22 +32,11 @@ func _on_Background_button_up():
 	bgDrag = false
 	session.areas[id]["Pos"] = rect_position
 
-func _place_buttons():
-	var bgWidth = $Background.rect_size.x
-	var bgHeight = $Background.rect_size.y
-	$ScaleButton.rect_position = Vector2(bgWidth-30, bgHeight-30)
-	$Label.rect_position = Vector2(bgWidth/2-$Label.rect_size.x/2, bgHeight/2)
-	$CenterContainer.rect_size = Vector2(bgWidth, bgHeight-40)
-	get_node("%Grid").columns = bgWidth / 30
-	session.areas[id]["Size"] = Vector2($Background.rect_size)
-	session.areas[id]["Pos"] = rect_position
-
 func _input(event):
-
 	if event is InputEventMouseMotion:
 		if bgDrag == true:
 			rect_position += event.get_relative() * camera.zoom.x
 		if scaleDrag == true:
 			rect_size += event.get_relative() * camera.zoom.x
-	if scaleDrag:
-		_place_buttons()
+	session.areas[id]["Size"] = rect_size
+	session.areas[id]["Pos"] = rect_position

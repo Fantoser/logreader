@@ -131,7 +131,7 @@ func _add_characters():
 		mapChar.texture = charTexture
 		if session.characters[id].has("icon") == false:
 			mapChar.self_modulate = session.characters[id]["color"]
-		areas.get_node(str(session.characters[id]["startLocation"])).get_node("%Grid").add_child(mapChar)
+		areas.get_node(str(session.characters[id]["startLocation"])).get_node("%CharContainer").add_child(mapChar)
 		mapChars[id] = mapChar
 
 func set_character_visible(toggle, id):
@@ -209,9 +209,9 @@ func _on_timeScale_scrolling():
 #func _move_characters(newTime):
 #	if newTime == session.startTime:
 #		for area in areas.get_children():
-#			for character in area.get_node("%Grid").get_children():
-#				area.get_node("%Grid").remove_child(character)
-#				areas.get_node(session.characters[int(character.name)]["startLocation"]).get_node("%Grid").add_child(character)
+#			for character in area.get_node("%CharContainer").get_children():
+#				area.get_node("%CharContainer").remove_child(character)
+#				areas.get_node(session.characters[int(character.name)]["startLocation"]).get_node("%CharContainer").add_child(character)
 #		return
 #	var from = "from"
 #	var to = "to"
@@ -229,13 +229,13 @@ func _on_timeScale_scrolling():
 #		if session.movements.has(time):
 #			for movement in session.movements[time]:
 #				fromArea = movement[from]
-#				if areas.get_node(movement[from]).get_node("%Grid").has_node(str(movement["character"])):
+#				if areas.get_node(movement[from]).get_node("%CharContainer").has_node(str(movement["character"])):
 #					fromArea = str(movement[from])
 #				else:
 #					fromArea = _find_character(str(movement["character"]))
-#				var character = areas.get_node(fromArea).get_node("%Grid").get_node(str(movement["character"]))
-#				areas.get_node(fromArea).get_node("%Grid").remove_child(character)
-#				areas.get_node(movement[to]).get_node("%Grid").add_child(character)
+#				var character = areas.get_node(fromArea).get_node("%CharContainer").get_node(str(movement["character"]))
+#				areas.get_node(fromArea).get_node("%CharContainer").remove_child(character)
+#				areas.get_node(movement[to]).get_node("%CharContainer").add_child(character)
 #				var tween = get_tree().create_tween()
 #				tween.tween_property(character, "rect_scale", Vector2(2, 2), 0.05).set_ease(Tween.EASE_OUT)
 #				tween.tween_property(character, "rect_scale", Vector2(1, 1), 0.5)
@@ -243,13 +243,13 @@ func _on_timeScale_scrolling():
 func _move_characters(newTime):
 	for charID in session.characters:
 		var toLocation = _find_charLocation(charID, newTime)
-		if areas.get_node(toLocation).get_node("%Grid").has_node(str(charID)):
+		if areas.get_node(toLocation).get_node("%CharContainer").has_node(str(charID)):
 			continue
 		else:
 			var fromLocation = _find_character(charID)
-			var character = areas.get_node(fromLocation).get_node("%Grid").get_node(str(charID))
-			areas.get_node(fromLocation).get_node("%Grid").remove_child(character)
-			areas.get_node(toLocation).get_node("%Grid").add_child(character)
+			var character = areas.get_node(fromLocation).get_node("%CharContainer").get_node(str(charID))
+			areas.get_node(fromLocation).get_node("%CharContainer").remove_child(character)
+			areas.get_node(toLocation).get_node("%CharContainer").add_child(character)
 			var tween = get_tree().create_tween()
 			tween.tween_property(character, "rect_scale", Vector2(2, 2), 0.05).set_ease(Tween.EASE_OUT)
 			tween.tween_property(character, "rect_scale", Vector2(1, 1), 0.5)
@@ -265,7 +265,7 @@ func _find_charLocation(charID, newTime):
 
 func _find_character(id):
 	for area in areas.get_children():
-		if area.get_node("%Grid").has_node(str(id)):
+		if area.get_node("%CharContainer").has_node(str(id)):
 			return str(area.name)
 
 func _on_Play_pressed():
