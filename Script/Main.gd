@@ -66,7 +66,6 @@ func _on_Read_pressed():
 						_process_move(line)
 				index += 1
 			file.close()
-		ResourceSaver.save("res://test_save.tres", session)
 		get_node("%LoadingLabel").text = ""
 		$"%Controls".loading = false
 		$"%Controls".setup()

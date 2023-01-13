@@ -216,6 +216,20 @@ step = 0.1
 value = 0.5
 suffix = "sec"
 
+[node name="HBoxContainer" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
+margin_left = 186.0
+margin_right = 734.0
+margin_bottom = 60.0
+size_flags_horizontal = 3
+alignment = 2
+
+[node name="Label" type="Label" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer/HBoxContainer"]
+margin_left = 516.0
+margin_top = 23.0
+margin_right = 548.0
+margin_bottom = 37.0
+text = "V 0.1"
+
 [node name="HBoxContainer2" type="HBoxContainer" parent="Controls/VBoxContainer"]
 margin_top = 202.0
 margin_right = 1010.0
@@ -311,7 +325,7 @@ margin_bottom = 333.0
 mouse_filter = 2
 
 [node name="ViewportContainer" type="ViewportContainer" parent="Output/HBoxContainer"]
-margin_right = 598.0
+margin_right = 1002.0
 margin_bottom = 326.0
 mouse_filter = 2
 size_flags_horizontal = 3
@@ -320,7 +334,7 @@ stretch = true
 
 [node name="MapView" type="Viewport" parent="Output/HBoxContainer/ViewportContainer"]
 unique_name_in_owner = true
-size = Vector2( 598, 326 )
+size = Vector2( 1002, 326 )
 handle_input_locally = false
 disable_3d = true
 usage = 0
@@ -333,11 +347,12 @@ unique_name_in_owner = true
 position = Vector2( 598, 370 )
 
 [node name="VSeparator" type="VSeparator" parent="Output/HBoxContainer"]
-margin_left = 602.0
-margin_right = 606.0
+margin_left = 1006.0
+margin_right = 1010.0
 margin_bottom = 326.0
 
 [node name="PanelContainer" type="PanelContainer" parent="Output/HBoxContainer"]
+visible = false
 self_modulate = Color( 0.584314, 0.584314, 0.584314, 1 )
 margin_left = 610.0
 margin_right = 1010.0

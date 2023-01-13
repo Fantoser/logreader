@@ -169,7 +169,8 @@ func _add_areas():
 		areaNode.id = id
 		areaNode.areaName = session.areas[id]["name"]
 		if loading == false:
-			areaNode.rect_position = Vector2(areas.get_child_count() * areaNode.rect_size.x+10, 0)
+#			areaNode.rect_position = Vector2(areas.get_child_count() * areaNode.rect_size.x+10, 0)
+			areaNode.rect_position = Vector2(300 + ((areas.get_child_count()%2*1.1) * areaNode.rect_size.x),((areas.get_child_count()/2 * 1.1) * areaNode.rect_size.y))
 			session.areas[id]["Pos"] = areaNode.rect_position
 			session.areas[id]["Size"] = Vector2(100, 100)
 		else:
