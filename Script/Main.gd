@@ -11,18 +11,18 @@ var dateDic = {"year": 2000,
 				"day": 01
 				}
 var monthDic = {
-	"Jan": 1,
-	"Feb": 2,
-	"Mar": 3,
-	"Apr": 4,
-	"May": 5,
-	"Jun": 6,
-	"Jul": 7,
-	"Aug": 8,
-	"Sep": 9,
-	"Oct": 10,
-	"Nov": 11,
-	"Dec": 12
+	"jan": 1,
+	"feb": 2,
+	"mar": 3,
+	"apr": 4,
+	"may": 5,
+	"jun": 6,
+	"jul": 7,
+	"aug": 8,
+	"sep": 9,
+	"oct": 10,
+	"nov": 11,
+	"dec": 12
 }
 var colors = ["#e57373", "#d91d00", "#7a432f", "#e6bbac", "#8c6246", "#ff0044", "#6e2e8e", "#6c5336", "#c200f2", "#d98d36", "#ffd580", "#f23d9d", "#a6987c", "#e2ace6",  "#566573", "#673973",  "#9979f2", "#7f6600", "#e6f23d", "#7a9900", "#b4e6ac", "#20802d", "#00330e", "#39e667", "#608071", "#755102", "#3df2e6", "#007780", "#132526", "#80e6ff", "#308fbf", "#205380", "#002e73", "#50592d", "#397ee6", "#0041f2","#260a00", "#acbbe6", "#0d1233", "#0e0066", "#26001f", "#7f0044", "#664d53", "#661a24"]
 
@@ -87,7 +87,8 @@ func _save_area(ID, name):
 
 func _process_IC_message(line):
 	var lineArray = line.split(" ")
-	var time = _convert_time(str(lineArray[4]) + "-" + str(monthDic[lineArray[1]]) + "-" + str(lineArray[2]) + " " + lineArray[3])
+#	var time = _convert_time(str(lineArray[4]) + "-" + str(monthDic[lineArray[1]]) + "-" + str(lineArray[2]) + " " + lineArray[3])
+	var time = _convert_time(str(lineArray[4]) + "-1-" + str(lineArray[2]) + " " + lineArray[3])
 	var character = lineArray[6]
 	var custom_name = null
 	var message = line.split(":", true, 3)[3]
@@ -258,7 +259,11 @@ func _process_move(line):
 	var to = line.split("] ")[4].rsplit(".")[0]
 	var toID = line.split("] ")[3].split("[")[1]
 	var lineArray = line.split(" ")
-	var time = _convert_time(str(lineArray[4]) + "-" + str(monthDic[lineArray[1]]) + "-" + str(lineArray[2]) + " " + str(lineArray[3]))
+	var time = _convert_time(str(lineArray[4]) + "-1-" + str(lineArray[2]) + " " + str(lineArray[3]))
+
+	print("From: " + fromID + " " + from)
+	print("To: " + toID + " " + to)
+	print("___________________")
 
 	var charID = _getCharID(character)
 	# Save from and to areas if they are not saved yet
@@ -307,8 +312,8 @@ func _check_unclaimed_movements(character, custom_name = null):
 		unclaimed_movements.erase(custom_name)
 
 func _convert_time(timeStr):
-	var timeDic = Time.get_datetime_dict_from_datetime_string(timeStr, false)
-	var time = Time.get_unix_time_from_datetime_dict(timeDic)
+#	var timeDic = Time.get_datetime_dict_from_datetime_string(timeStr, false)
+	var time = Time.get_unix_time_from_datetime_string(timeStr)
 	if session.startTime == 0:
 		session.startTime = time
 	if session.endTime < time:

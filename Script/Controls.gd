@@ -15,6 +15,16 @@ var mapChars = {}
 
 var loading
 
+var weekdayDic = {
+	1: "Monday",
+	2: "Tuesday",
+	3: "Wednesday",
+	4: "Thursday",
+	5: "Friday",
+	6: "Saturday",
+	7: "Sunday"
+}
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	areas = get_node("%Map").get_node("AreasRects")
@@ -81,9 +91,11 @@ func _on_LoadButton_pressed():
 		
 
 func setup():
-	get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
+	var currentWeekday = weekdayDic[Time.get_date_dict_from_unix_time(session.startTime)["weekday"]]
+	get_node("%currentTime").text =currentWeekday + " " + Time.get_time_string_from_unix_time(get_node("%timeScale").value + session.startTime)
 	get_node("%timeScale").max_value = session.endTime - session.startTime
-	get_node("%endTime").text = Time.get_datetime_string_from_unix_time(session.endTime, true)
+	var endWeekday = weekdayDic[Time.get_date_dict_from_unix_time(session.endTime)["weekday"]]
+	get_node("%endTime").text = endWeekday + " " + Time.get_time_string_from_unix_time(session.endTime)
 	prevTime = session.startTime
 	_fill_log()
 	_add_areas()

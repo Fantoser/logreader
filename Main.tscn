@@ -218,15 +218,15 @@ suffix = "sec"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer"]
 margin_left = 186.0
-margin_right = 734.0
+margin_right = 741.0
 margin_bottom = 60.0
 size_flags_horizontal = 3
 alignment = 2
 
 [node name="Label" type="Label" parent="Controls/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/HBoxContainer/HBoxContainer"]
-margin_left = 516.0
+margin_left = 523.0
 margin_top = 23.0
-margin_right = 548.0
+margin_right = 555.0
 margin_bottom = 37.0
 text = "V 0.1"
 
