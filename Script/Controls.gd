@@ -15,15 +15,8 @@ var mapChars = {}
 
 var loading
 
-var weekdayDic = {
-	1: "Monday",
-	2: "Tuesday",
-	3: "Wednesday",
-	4: "Thursday",
-	5: "Friday",
-	6: "Saturday",
-	7: "Sunday"
-}
+var currentDay
+var endDay
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -91,15 +84,28 @@ func _on_LoadButton_pressed():
 		
 
 func setup():
-	var currentWeekday = weekdayDic[Time.get_date_dict_from_unix_time(session.startTime)["weekday"]]
-	get_node("%currentTime").text =currentWeekday + " " + Time.get_time_string_from_unix_time(get_node("%timeScale").value + session.startTime)
+	currentDay = Time.get_date_dict_from_unix_time(session.startTime)["day"]
+	get_node("%currentTime").text = convertDay(currentDay) + " " + Time.get_time_string_from_unix_time(get_node("%timeScale").value + session.startTime)
 	get_node("%timeScale").max_value = session.endTime - session.startTime
-	var endWeekday = weekdayDic[Time.get_date_dict_from_unix_time(session.endTime)["weekday"]]
-	get_node("%endTime").text = endWeekday + " " + Time.get_time_string_from_unix_time(session.endTime)
+	endDay = str(Time.get_date_dict_from_unix_time(session.endTime)["day"])
+	get_node("%endTime").text = convertDay(endDay) + " " + Time.get_time_string_from_unix_time(session.endTime)
 	prevTime = session.startTime
 	_fill_log()
 	_add_areas()
 	_add_characters()
+
+func convertDay(day):
+	var result
+	match day:
+		1:
+			result = str(day) + "st"
+		2:
+			result = str(day) + "nd"
+		3:
+			result = str(day) + "rd"
+		_:
+			result = str(day) + "th"
+	return result
 
 func _fill_log():
 	for time in range(session.startTime, session.endTime+1):
@@ -193,8 +199,10 @@ func _add_areas():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if get_node("%timeScale").value + session.startTime != prevTime and get_node("%endTime").text != "0":
-		get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
-		var newTime = Time.get_unix_time_from_datetime_string(get_node("%currentTime").text)
+#		get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
+		currentDay = Time.get_date_dict_from_unix_time(get_node("%timeScale").value + session.startTime)["day"]
+		get_node("%currentTime").text = convertDay(currentDay) + " " + Time.get_time_string_from_unix_time(get_node("%timeScale").value + session.startTime)
+		var newTime = Time.get_unix_time_from_datetime_string(Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime))
 		_move_characters(newTime)
 		prevTime = newTime
 	
@@ -211,13 +219,6 @@ func _process(delta):
 		else:
 			timer -= 1
 
-
-func _on_timeScale_scrolling():
-	if get_node("%endTime").text != "0":
-		get_node("%currentTime").text = Time.get_datetime_string_from_unix_time(get_node("%timeScale").value + session.startTime, true)
-		var newTime = Time.get_unix_time_from_datetime_string(get_node("%currentTime").text)
-		_move_characters(newTime)
-		prevTime = newTime
 
 #func _move_characters(newTime):
 #	if newTime == session.startTime:
